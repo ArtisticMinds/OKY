@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/StartAnimation.unity
+    guid: 33c3642d43183a249a8b8572fde3a238
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 267e8dd3aa1b1d8478dd2045231255c1
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World1/lev_1.unity
+    guid: 111916d71cf52904e88ec64f98f59e53
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World1/lev_2.unity
+    guid: 3997581325b6da940814315c14db33f5
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World1/lev_3.unity
+    guid: 17dae980363fbb249adbe4fb9146cc55
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World1/lev_4.unity
+    guid: b132821301dd2de4f933213d1e1aaf25
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World1/lev_5.unity
+    guid: 96eb3bb49de515042b1bd721bb67f115
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World1/lev_6.unity
+    guid: 4e3d6e198bcc49a429028c0f4d9587f7
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World1/lev_7.unity
+    guid: 23b7b8af38a97e64db31641a6f4650c9
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World1/lev_8.unity
+    guid: 01ec8b2f95db2db4e8e376f7edd9be16
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World1/BonusLevels/lev_1b.unity
+    guid: ad2382b879933be41beb87d1d33045ba
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World1/BonusLevels/lev_3b.unity
+    guid: 5c0fb74ac5e44524c9ea4adaf7ad7b1c
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World1/BonusLevels/lev_2b.unity
+    guid: 15293052db1b746419cf409cf39a8fab
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World1/BonusLevels/lev_4b.unity
+    guid: 3fff1f331db78054a9f190f2595cb9be
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World2/lev_9.unity
+    guid: 22aad648a614a1049b124f2a5ceb5a91
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World2/lev_10.unity
+    guid: 42990021c9a858f4b85638047151799a
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World2/lev_11.unity
+    guid: 93fc843208862f54c83cb161eede60c4
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World2/lev_12.unity
+    guid: 4cfbc74ee647ce44592704ad49a6dcb5
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World2/lev_13.unity
+    guid: 93b74fe2b7afc4742b62e73a6958e068
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World2/lev_14.unity
+    guid: e14d46749a6d0dc4ab9705d3404ca172
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World2/lev_15.unity
+    guid: 278a725d2581df0459e3e4a94d53efb3
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World2/lev_16.unity
+    guid: 6a4bad4b2f7b2e34797d2817963df786
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World3/lev_17.unity
+    guid: f8448c7279222e6499f23a49639ddbbe
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World3/lev_18.unity
+    guid: c57e59ac00aff0747a9da04b5b9574bb
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World3/lev_19.unity
+    guid: 469fd67b7f33581428a730ad9ea1f02b
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World3/lev_20.unity
+    guid: 821cb3cbc9e62b148bb2d199851c1139
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World3/lev_21.unity
+    guid: f2e87e6cbbe850349b772946afd116d1
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World3/lev_22.unity
+    guid: e91713711118b1b4eb77f11261bd9a27
+  - enabled: 1
+    path: Assets/Scenes/Livelli/World3/lev_23.unity
+    guid: 5ed99d0ca4f2657408c4fd7e0901f94c

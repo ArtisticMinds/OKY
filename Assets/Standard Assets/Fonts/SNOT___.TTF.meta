@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 1e3845d9e94a7a14090640e801d9bbd3
+timeCreated: 1495454989
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Snot
+  fontNames:
+  - Snot
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

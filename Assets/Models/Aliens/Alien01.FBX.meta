@@ -1,0 +1,587 @@
+fileFormatVersion: 2
+guid: 4a138a394d1dd8447833bacbbbdc1c1f
+timeCreated: 1503095783
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Sphere001
+    100004: Sphere002
+    100006: Sphere004
+    100008: Sphere005
+    100010: Sphere006
+    100012: Sphere007
+    100014: Sphere008
+    100016: dente
+    100018: dente2
+    100020: Sopraciglia
+    100022: Palpebra
+    100024: Palpebra001
+    100026: Palpebra002
+    100028: Alien
+    100030: Bone002
+    100032: Bone004
+    100034: Bone008
+    100036: Bone011
+    100038: Bone012
+    100040: Bone013
+    100042: Bone015
+    100044: Bone016
+    100046: Bone017
+    100048: BraccioDX
+    100050: BraccioSX
+    100052: LabbroSopra
+    100054: LabbroSotto
+    100056: ManoDX
+    100058: ManoSX
+    100060: OcchioCentro
+    100062: OcchioDestro
+    100064: OcchioSinistro
+    100066: Root
+    100068: SpallaDX
+    100070: SpallaSX
+    100072: l1
+    100074: l2
+    100076: l3
+    100078: l4
+    100080: l5
+    100082: l6
+    100084: l7
+    100086: l8
+    100088: Lingua01
+    400000: //RootNode
+    400002: Sphere001
+    400004: Sphere002
+    400006: Sphere004
+    400008: Sphere005
+    400010: Sphere006
+    400012: Sphere007
+    400014: Sphere008
+    400016: dente
+    400018: dente2
+    400020: Sopraciglia
+    400022: Palpebra
+    400024: Palpebra001
+    400026: Palpebra002
+    400028: Alien
+    400030: Bone002
+    400032: Bone004
+    400034: Bone008
+    400036: Bone011
+    400038: Bone012
+    400040: Bone013
+    400042: Bone015
+    400044: Bone016
+    400046: Bone017
+    400048: BraccioDX
+    400050: BraccioSX
+    400052: LabbroSopra
+    400054: LabbroSotto
+    400056: ManoDX
+    400058: ManoSX
+    400060: OcchioCentro
+    400062: OcchioDestro
+    400064: OcchioSinistro
+    400066: Root
+    400068: SpallaDX
+    400070: SpallaSX
+    400072: l1
+    400074: l2
+    400076: l3
+    400078: l4
+    400080: l5
+    400082: l6
+    400084: l7
+    400086: l8
+    400088: Lingua01
+    2300000: Sphere001
+    2300002: Sphere002
+    2300004: Sphere004
+    2300006: Sphere005
+    2300008: Sphere006
+    2300010: Sphere007
+    2300012: Sphere008
+    2300014: dente
+    2300016: dente2
+    2300018: Sopraciglia
+    2300020: Palpebra
+    2300022: Palpebra001
+    2300024: Palpebra002
+    3300000: Sphere001
+    3300002: Sphere002
+    3300004: Sphere004
+    3300006: Sphere005
+    3300008: Sphere006
+    3300010: Sphere007
+    3300012: Sphere008
+    3300014: dente
+    3300016: dente2
+    3300018: Sopraciglia
+    3300020: Palpebra
+    3300022: Palpebra001
+    3300024: Palpebra002
+    4300000: Sphere001
+    4300002: Sphere002
+    4300004: Sphere004
+    4300006: Sphere005
+    4300008: Sphere006
+    4300010: Sphere007
+    4300012: Sphere008
+    4300014: dente
+    4300016: dente2
+    4300018: Sopraciglia
+    4300020: Palpebra
+    4300022: Palpebra001
+    4300024: Palpebra002
+    4300026: Alien
+    4300028: Lingua01
+    7400000: AlienIdle
+    7400002: AlienShot
+    7400004: AlienRun
+    7400006: AlienWalk
+    7400008: AlienAttack
+    9500000: //RootNode
+    13700000: Alien
+    13700002: Sphere004
+    13700004: Sphere007
+    13700006: Sphere008
+    13700008: Lingua01
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: AlienIdle
+      takeName: Alien001
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Alien
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Bone002
+        weight: 1
+      - path: Root/Bone002/OcchioCentro
+        weight: 1
+      - path: Root/Bone002/OcchioDestro
+        weight: 1
+      - path: Root/Bone002/OcchioSinistro
+        weight: 1
+      - path: Root/Bone011
+        weight: 1
+      - path: Root/Bone011/Bone012
+        weight: 1
+      - path: Root/Bone011/Bone012/Bone013
+        weight: 1
+      - path: Root/Bone015
+        weight: 1
+      - path: Root/Bone015/Bone016
+        weight: 1
+      - path: Root/Bone015/Bone016/Bone017
+        weight: 1
+      - path: Root/LabbroSopra
+        weight: 1
+      - path: Root/LabbroSotto
+        weight: 1
+      - path: Root/SpallaDX
+        weight: 1
+      - path: Root/SpallaDX/Bone008
+        weight: 1
+      - path: Root/SpallaDX/Bone008/BraccioSX
+        weight: 1
+      - path: Root/SpallaDX/Bone008/BraccioSX/ManoSX
+        weight: 1
+      - path: Root/SpallaSX
+        weight: 1
+      - path: Root/SpallaSX/Bone004
+        weight: 1
+      - path: Root/SpallaSX/Bone004/BraccioDX
+        weight: 1
+      - path: Root/SpallaSX/Bone004/BraccioDX/ManoDX
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: AlienShot
+      takeName: Alien001
+      firstFrame: 60
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Alien
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Bone002
+        weight: 1
+      - path: Root/Bone002/OcchioCentro
+        weight: 1
+      - path: Root/Bone002/OcchioDestro
+        weight: 1
+      - path: Root/Bone002/OcchioSinistro
+        weight: 1
+      - path: Root/Bone011
+        weight: 1
+      - path: Root/Bone011/Bone012
+        weight: 1
+      - path: Root/Bone011/Bone012/Bone013
+        weight: 1
+      - path: Root/Bone015
+        weight: 1
+      - path: Root/Bone015/Bone016
+        weight: 1
+      - path: Root/Bone015/Bone016/Bone017
+        weight: 1
+      - path: Root/LabbroSopra
+        weight: 1
+      - path: Root/LabbroSotto
+        weight: 1
+      - path: Root/SpallaDX
+        weight: 1
+      - path: Root/SpallaDX/Bone008
+        weight: 1
+      - path: Root/SpallaDX/Bone008/BraccioSX
+        weight: 1
+      - path: Root/SpallaDX/Bone008/BraccioSX/ManoSX
+        weight: 1
+      - path: Root/SpallaSX
+        weight: 1
+      - path: Root/SpallaSX/Bone004
+        weight: 1
+      - path: Root/SpallaSX/Bone004/BraccioDX
+        weight: 1
+      - path: Root/SpallaSX/Bone004/BraccioDX/ManoDX
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: AlienRun
+      takeName: Alien001
+      firstFrame: 80
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Alien
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Bone002
+        weight: 1
+      - path: Root/Bone002/OcchioCentro
+        weight: 1
+      - path: Root/Bone002/OcchioDestro
+        weight: 1
+      - path: Root/Bone002/OcchioSinistro
+        weight: 1
+      - path: Root/Bone011
+        weight: 1
+      - path: Root/Bone011/Bone012
+        weight: 1
+      - path: Root/Bone011/Bone012/Bone013
+        weight: 1
+      - path: Root/Bone015
+        weight: 1
+      - path: Root/Bone015/Bone016
+        weight: 1
+      - path: Root/Bone015/Bone016/Bone017
+        weight: 1
+      - path: Root/LabbroSopra
+        weight: 1
+      - path: Root/LabbroSotto
+        weight: 1
+      - path: Root/SpallaDX
+        weight: 1
+      - path: Root/SpallaDX/Bone008
+        weight: 1
+      - path: Root/SpallaDX/Bone008/BraccioSX
+        weight: 1
+      - path: Root/SpallaDX/Bone008/BraccioSX/ManoSX
+        weight: 1
+      - path: Root/SpallaSX
+        weight: 1
+      - path: Root/SpallaSX/Bone004
+        weight: 1
+      - path: Root/SpallaSX/Bone004/BraccioDX
+        weight: 1
+      - path: Root/SpallaSX/Bone004/BraccioDX/ManoDX
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: AlienWalk
+      takeName: Alien001
+      firstFrame: 80
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Alien
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Bone002
+        weight: 1
+      - path: Root/Bone002/OcchioCentro
+        weight: 1
+      - path: Root/Bone002/OcchioDestro
+        weight: 1
+      - path: Root/Bone002/OcchioSinistro
+        weight: 1
+      - path: Root/Bone011
+        weight: 1
+      - path: Root/Bone011/Bone012
+        weight: 1
+      - path: Root/Bone011/Bone012/Bone013
+        weight: 1
+      - path: Root/Bone015
+        weight: 1
+      - path: Root/Bone015/Bone016
+        weight: 1
+      - path: Root/Bone015/Bone016/Bone017
+        weight: 1
+      - path: Root/LabbroSopra
+        weight: 1
+      - path: Root/LabbroSotto
+        weight: 1
+      - path: Root/SpallaDX
+        weight: 1
+      - path: Root/SpallaDX/Bone008
+        weight: 1
+      - path: Root/SpallaDX/Bone008/BraccioSX
+        weight: 1
+      - path: Root/SpallaDX/Bone008/BraccioSX/ManoSX
+        weight: 1
+      - path: Root/SpallaSX
+        weight: 1
+      - path: Root/SpallaSX/Bone004
+        weight: 1
+      - path: Root/SpallaSX/Bone004/BraccioDX
+        weight: 1
+      - path: Root/SpallaSX/Bone004/BraccioDX/ManoDX
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: AlienAttack
+      takeName: Alien001
+      firstFrame: 101
+      lastFrame: 130
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Alien
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Bone002
+        weight: 1
+      - path: Root/Bone002/OcchioCentro
+        weight: 1
+      - path: Root/Bone002/OcchioDestro
+        weight: 1
+      - path: Root/Bone002/OcchioSinistro
+        weight: 1
+      - path: Root/Bone011
+        weight: 1
+      - path: Root/Bone011/Bone012
+        weight: 1
+      - path: Root/Bone011/Bone012/Bone013
+        weight: 1
+      - path: Root/Bone015
+        weight: 1
+      - path: Root/Bone015/Bone016
+        weight: 1
+      - path: Root/Bone015/Bone016/Bone017
+        weight: 1
+      - path: Root/LabbroSopra
+        weight: 1
+      - path: Root/LabbroSotto
+        weight: 1
+      - path: Root/SpallaDX
+        weight: 1
+      - path: Root/SpallaDX/Bone008
+        weight: 1
+      - path: Root/SpallaDX/Bone008/BraccioSX
+        weight: 1
+      - path: Root/SpallaDX/Bone008/BraccioSX/ManoSX
+        weight: 1
+      - path: Root/SpallaSX
+        weight: 1
+      - path: Root/SpallaSX/Bone004
+        weight: 1
+      - path: Root/SpallaSX/Bone004/BraccioDX
+        weight: 1
+      - path: Root/SpallaSX/Bone004/BraccioDX/ManoDX
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.015
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: Root
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

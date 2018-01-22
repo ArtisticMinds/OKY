@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &101100000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: New Avatar Mask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Rex
+    m_Weight: 0
+  - m_Path: OcchioSx
+    m_Weight: 1
+  - m_Path: PalpebraSx
+    m_Weight: 1
+  - m_Path: OcchioDx
+    m_Weight: 1
+  - m_Path: PalpebraDX
+    m_Weight: 1
+  - m_Path: RootBone
+    m_Weight: 0
+  - m_Path: RootBone/Spina
+    m_Weight: 1
+  - m_Path: RootBone/Spina/Collo
+    m_Weight: 1
+  - m_Path: RootBone/Spina/Collo/Testa
+    m_Weight: 1
+  - m_Path: RootBone/Spina/Collo/Testa/Muso
+    m_Weight: 1
+  - m_Path: RootBone/Spina/Collo/Testa/BoneEyeSX
+    m_Weight: 1
+  - m_Path: RootBone/Spina/Collo/Testa/BoneEyeSX/Bone006
+    m_Weight: 1
+  - m_Path: RootBone/Spina/Collo/Testa/BoneEyeSX/Bone006/OssoPalpebraSX
+    m_Weight: 1
+  - m_Path: RootBone/Spina/Collo/Testa/EyeDX
+    m_Weight: 1
+  - m_Path: RootBone/Spina/Collo/Testa/EyeDX/Bone007
+    m_Weight: 1
+  - m_Path: RootBone/Spina/Collo/Testa/EyeDX/Bone007/OssoPalpebraDX
+    m_Weight: 1
+  - m_Path: RootBone/Spina/Collo/Macella
+    m_Weight: 1
+  - m_Path: RootBone/Spina/SpallaDX
+    m_Weight: 1
+  - m_Path: RootBone/Spina/SpallaDX/BraccioDX
+    m_Weight: 1
+  - m_Path: RootBone/Spina/SpallaSX
+    m_Weight: 1
+  - m_Path: RootBone/Spina/SpallaSX/BraccioSX
+    m_Weight: 1
+  - m_Path: RootBone/AncaDX
+    m_Weight: 0
+  - m_Path: RootBone/AncaDX/CosciaDX
+    m_Weight: 0
+  - m_Path: RootBone/AncaDX/CosciaDX/GambaDX
+    m_Weight: 0
+  - m_Path: RootBone/AncaDX/CosciaDX/GambaDX/PiedeDX01
+    m_Weight: 0
+  - m_Path: RootBone/AncaDX/CosciaDX/GambaDX/PiedeDX01/PiedeDX02
+    m_Weight: 0
+  - m_Path: RootBone/AncaSX
+    m_Weight: 0
+  - m_Path: RootBone/AncaSX/CosciaSX
+    m_Weight: 0
+  - m_Path: RootBone/AncaSX/CosciaSX/GambaSX
+    m_Weight: 0
+  - m_Path: RootBone/AncaSX/CosciaSX/GambaSX/PiedeSX01
+    m_Weight: 0
+  - m_Path: RootBone/AncaSX/CosciaSX/GambaSX/PiedeSX01/PiedeSX02
+    m_Weight: 0
+  - m_Path: RootBone/Coda01
+    m_Weight: 0
+  - m_Path: RootBone/Coda01/Coda02
+    m_Weight: 0
+  - m_Path: RootBone/Coda01/Coda02/Coda03
+    m_Weight: 0

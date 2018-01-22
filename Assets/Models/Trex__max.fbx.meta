@@ -1,0 +1,927 @@
+fileFormatVersion: 2
+guid: 470f5559c40a96e499dd7a4e77a5ce43
+timeCreated: 1513350717
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: AncaDX
+    100002: AncaSX
+    100004: Bone006
+    100006: Bone007
+    100008: BoneEyeSX
+    100010: BraccioDX
+    100012: BraccioSX
+    100014: Coda01
+    100016: Coda02
+    100018: Coda03
+    100020: Collo
+    100022: CosciaDX
+    100024: CosciaSX
+    100026: EyeDX
+    100028: GambaDX
+    100030: GambaSX
+    100032: Macella
+    100034: Muso
+    100036: OcchioDx
+    100038: OcchioSx
+    100040: OssoPalpebraDX
+    100042: OssoPalpebraSX
+    100044: PalpebraDX
+    100046: PalpebraSx
+    100048: PiedeDX01
+    100050: PiedeDX02
+    100052: PiedeSX01
+    100054: PiedeSX02
+    100056: Rex
+    100058: RootBone
+    100060: SpallaDX
+    100062: SpallaSX
+    100064: Spina
+    100066: Testa
+    100068: //RootNode
+    400000: AncaDX
+    400002: AncaSX
+    400004: Bone006
+    400006: Bone007
+    400008: BoneEyeSX
+    400010: BraccioDX
+    400012: BraccioSX
+    400014: Coda01
+    400016: Coda02
+    400018: Coda03
+    400020: Collo
+    400022: CosciaDX
+    400024: CosciaSX
+    400026: EyeDX
+    400028: GambaDX
+    400030: GambaSX
+    400032: Macella
+    400034: Muso
+    400036: OcchioDx
+    400038: OcchioSx
+    400040: OssoPalpebraDX
+    400042: OssoPalpebraSX
+    400044: PalpebraDX
+    400046: PalpebraSx
+    400048: PiedeDX01
+    400050: PiedeDX02
+    400052: PiedeSX01
+    400054: PiedeSX02
+    400056: Rex
+    400058: RootBone
+    400060: SpallaDX
+    400062: SpallaSX
+    400064: Spina
+    400066: Testa
+    400068: //RootNode
+    4300000: Rex
+    4300002: OcchioSx
+    4300004: PalpebraSx
+    4300006: OcchioDx
+    4300008: PalpebraDX
+    7400000: Rex_Hidle
+    7400002: Rex_Walk
+    7400004: Rex_Jump
+    7400006: RexCrouch
+    7400008: RexCrouchWalk
+    7400010: RexDead
+    7400012: RexFelice
+    7400014: Sparo01
+    7400016: Scivola
+    9500000: //RootNode
+    13700000: OcchioDx
+    13700002: OcchioSx
+    13700004: PalpebraDX
+    13700006: PalpebraSx
+    13700008: Rex
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Occhi
+    second: {fileID: 2100000, guid: 23b87d700343b5640baf738d09d127a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trex_from_Maya1_lambert3SG1
+    second: {fileID: 2100000, guid: 802260c7b0072334ab40f63ac1beda00, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 1
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Rex_Hidle
+      takeName: Rex2
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 4
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: OcchioDx
+        weight: 1
+      - path: OcchioSx
+        weight: 1
+      - path: PalpebraDX
+        weight: 1
+      - path: PalpebraSx
+        weight: 1
+      - path: Rex
+        weight: 1
+      - path: RootBone
+        weight: 1
+      - path: RootBone/AncaDX
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX/GambaDX
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX/GambaDX/PiedeDX01
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX/GambaDX/PiedeDX01/PiedeDX02
+        weight: 1
+      - path: RootBone/AncaSX
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX/GambaSX
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX/GambaSX/PiedeSX01
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX/GambaSX/PiedeSX01/PiedeSX02
+        weight: 1
+      - path: RootBone/Coda01
+        weight: 1
+      - path: RootBone/Coda01/Coda02
+        weight: 1
+      - path: RootBone/Coda01/Coda02/Coda03
+        weight: 1
+      - path: RootBone/Spina
+        weight: 1
+      - path: RootBone/Spina/Collo
+        weight: 1
+      - path: RootBone/Spina/Collo/Macella
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/BoneEyeSX
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/BoneEyeSX/Bone006
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/BoneEyeSX/Bone006/OssoPalpebraSX
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/EyeDX
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/EyeDX/Bone007
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/EyeDX/Bone007/OssoPalpebraDX
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/Muso
+        weight: 1
+      - path: RootBone/Spina/SpallaDX
+        weight: 1
+      - path: RootBone/Spina/SpallaDX/BraccioDX
+        weight: 1
+      - path: RootBone/Spina/SpallaSX
+        weight: 1
+      - path: RootBone/Spina/SpallaSX/BraccioSX
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rex_Walk
+      takeName: Rex2
+      firstFrame: 51
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rex
+        weight: 1
+      - path: OcchioSx
+        weight: 1
+      - path: PalpebraSx
+        weight: 1
+      - path: OcchioDx
+        weight: 1
+      - path: PalpebraDX
+        weight: 1
+      - path: RootBone
+        weight: 1
+      - path: RootBone/Spina
+        weight: 1
+      - path: RootBone/Spina/Collo
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/Muso
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/BoneEyeSX
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/BoneEyeSX/Bone006
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/BoneEyeSX/Bone006/OssoPalpebraSX
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/EyeDX
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/EyeDX/Bone007
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/EyeDX/Bone007/OssoPalpebraDX
+        weight: 1
+      - path: RootBone/Spina/Collo/Macella
+        weight: 1
+      - path: RootBone/Spina/SpallaDX
+        weight: 1
+      - path: RootBone/Spina/SpallaDX/BraccioDX
+        weight: 1
+      - path: RootBone/Spina/SpallaSX
+        weight: 1
+      - path: RootBone/Spina/SpallaSX/BraccioSX
+        weight: 1
+      - path: RootBone/AncaDX
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX/GambaDX
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX/GambaDX/PiedeDX01
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX/GambaDX/PiedeDX01/PiedeDX02
+        weight: 1
+      - path: RootBone/AncaSX
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX/GambaSX
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX/GambaSX/PiedeSX01
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX/GambaSX/PiedeSX01/PiedeSX02
+        weight: 1
+      - path: RootBone/Coda01
+        weight: 1
+      - path: RootBone/Coda01/Coda02
+        weight: 1
+      - path: RootBone/Coda01/Coda02/Coda03
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Rex_Jump
+      takeName: Rex2
+      firstFrame: 81
+      lastFrame: 130
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rex
+        weight: 1
+      - path: OcchioSx
+        weight: 1
+      - path: PalpebraSx
+        weight: 1
+      - path: OcchioDx
+        weight: 1
+      - path: PalpebraDX
+        weight: 1
+      - path: RootBone
+        weight: 1
+      - path: RootBone/Spina
+        weight: 1
+      - path: RootBone/Spina/Collo
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/Muso
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/BoneEyeSX
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/BoneEyeSX/Bone006
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/BoneEyeSX/Bone006/OssoPalpebraSX
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/EyeDX
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/EyeDX/Bone007
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/EyeDX/Bone007/OssoPalpebraDX
+        weight: 1
+      - path: RootBone/Spina/Collo/Macella
+        weight: 1
+      - path: RootBone/Spina/SpallaDX
+        weight: 1
+      - path: RootBone/Spina/SpallaDX/BraccioDX
+        weight: 1
+      - path: RootBone/Spina/SpallaSX
+        weight: 1
+      - path: RootBone/Spina/SpallaSX/BraccioSX
+        weight: 1
+      - path: RootBone/AncaDX
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX/GambaDX
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX/GambaDX/PiedeDX01
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX/GambaDX/PiedeDX01/PiedeDX02
+        weight: 1
+      - path: RootBone/AncaSX
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX/GambaSX
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX/GambaSX/PiedeSX01
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX/GambaSX/PiedeSX01/PiedeSX02
+        weight: 1
+      - path: RootBone/Coda01
+        weight: 1
+      - path: RootBone/Coda01/Coda02
+        weight: 1
+      - path: RootBone/Coda01/Coda02/Coda03
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: RexCrouch
+      takeName: Rex2
+      firstFrame: 131
+      lastFrame: 136
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rex
+        weight: 1
+      - path: OcchioSx
+        weight: 1
+      - path: PalpebraSx
+        weight: 1
+      - path: OcchioDx
+        weight: 1
+      - path: PalpebraDX
+        weight: 1
+      - path: RootBone
+        weight: 1
+      - path: RootBone/Spina
+        weight: 1
+      - path: RootBone/Spina/Collo
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/Muso
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/BoneEyeSX
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/BoneEyeSX/Bone006
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/BoneEyeSX/Bone006/OssoPalpebraSX
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/EyeDX
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/EyeDX/Bone007
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/EyeDX/Bone007/OssoPalpebraDX
+        weight: 1
+      - path: RootBone/Spina/Collo/Macella
+        weight: 1
+      - path: RootBone/Spina/SpallaDX
+        weight: 1
+      - path: RootBone/Spina/SpallaDX/BraccioDX
+        weight: 1
+      - path: RootBone/Spina/SpallaSX
+        weight: 1
+      - path: RootBone/Spina/SpallaSX/BraccioSX
+        weight: 1
+      - path: RootBone/AncaDX
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX/GambaDX
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX/GambaDX/PiedeDX01
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX/GambaDX/PiedeDX01/PiedeDX02
+        weight: 1
+      - path: RootBone/AncaSX
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX/GambaSX
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX/GambaSX/PiedeSX01
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX/GambaSX/PiedeSX01/PiedeSX02
+        weight: 1
+      - path: RootBone/Coda01
+        weight: 1
+      - path: RootBone/Coda01/Coda02
+        weight: 1
+      - path: RootBone/Coda01/Coda02/Coda03
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: RexCrouchWalk
+      takeName: Rex2
+      firstFrame: 140
+      lastFrame: 167
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rex
+        weight: 1
+      - path: OcchioSx
+        weight: 1
+      - path: PalpebraSx
+        weight: 1
+      - path: OcchioDx
+        weight: 1
+      - path: PalpebraDX
+        weight: 1
+      - path: RootBone
+        weight: 1
+      - path: RootBone/Spina
+        weight: 1
+      - path: RootBone/Spina/Collo
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/Muso
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/BoneEyeSX
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/BoneEyeSX/Bone006
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/BoneEyeSX/Bone006/OssoPalpebraSX
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/EyeDX
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/EyeDX/Bone007
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/EyeDX/Bone007/OssoPalpebraDX
+        weight: 1
+      - path: RootBone/Spina/Collo/Macella
+        weight: 1
+      - path: RootBone/Spina/SpallaDX
+        weight: 1
+      - path: RootBone/Spina/SpallaDX/BraccioDX
+        weight: 1
+      - path: RootBone/Spina/SpallaSX
+        weight: 1
+      - path: RootBone/Spina/SpallaSX/BraccioSX
+        weight: 1
+      - path: RootBone/AncaDX
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX/GambaDX
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX/GambaDX/PiedeDX01
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX/GambaDX/PiedeDX01/PiedeDX02
+        weight: 1
+      - path: RootBone/AncaSX
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX/GambaSX
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX/GambaSX/PiedeSX01
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX/GambaSX/PiedeSX01/PiedeSX02
+        weight: 1
+      - path: RootBone/Coda01
+        weight: 1
+      - path: RootBone/Coda01/Coda02
+        weight: 1
+      - path: RootBone/Coda01/Coda02/Coda03
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: RexDead
+      takeName: Rex2
+      firstFrame: 170
+      lastFrame: 220
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rex
+        weight: 1
+      - path: OcchioSx
+        weight: 1
+      - path: PalpebraSx
+        weight: 1
+      - path: OcchioDx
+        weight: 1
+      - path: PalpebraDX
+        weight: 1
+      - path: RootBone
+        weight: 1
+      - path: RootBone/Spina
+        weight: 1
+      - path: RootBone/Spina/Collo
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/Muso
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/BoneEyeSX
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/BoneEyeSX/Bone006
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/BoneEyeSX/Bone006/OssoPalpebraSX
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/EyeDX
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/EyeDX/Bone007
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/EyeDX/Bone007/OssoPalpebraDX
+        weight: 1
+      - path: RootBone/Spina/Collo/Macella
+        weight: 1
+      - path: RootBone/Spina/SpallaDX
+        weight: 1
+      - path: RootBone/Spina/SpallaDX/BraccioDX
+        weight: 1
+      - path: RootBone/Spina/SpallaSX
+        weight: 1
+      - path: RootBone/Spina/SpallaSX/BraccioSX
+        weight: 1
+      - path: RootBone/AncaDX
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX/GambaDX
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX/GambaDX/PiedeDX01
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX/GambaDX/PiedeDX01/PiedeDX02
+        weight: 1
+      - path: RootBone/AncaSX
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX/GambaSX
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX/GambaSX/PiedeSX01
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX/GambaSX/PiedeSX01/PiedeSX02
+        weight: 1
+      - path: RootBone/Coda01
+        weight: 1
+      - path: RootBone/Coda01/Coda02
+        weight: 1
+      - path: RootBone/Coda01/Coda02/Coda03
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: RexFelice
+      takeName: Rex
+      firstFrame: 224
+      lastFrame: 235
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rex
+        weight: 1
+      - path: OcchioSx
+        weight: 1
+      - path: PalpebraSx
+        weight: 1
+      - path: OcchioDx
+        weight: 1
+      - path: PalpebraDX
+        weight: 1
+      - path: RootBone
+        weight: 1
+      - path: RootBone/Spina
+        weight: 1
+      - path: RootBone/Spina/Collo
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/Muso
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/BoneEyeSX
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/BoneEyeSX/Bone006
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/BoneEyeSX/Bone006/OssoPalpebraSX
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/EyeDX
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/EyeDX/Bone007
+        weight: 1
+      - path: RootBone/Spina/Collo/Testa/EyeDX/Bone007/OssoPalpebraDX
+        weight: 1
+      - path: RootBone/Spina/Collo/Macella
+        weight: 1
+      - path: RootBone/Spina/SpallaDX
+        weight: 1
+      - path: RootBone/Spina/SpallaDX/BraccioDX
+        weight: 1
+      - path: RootBone/Spina/SpallaSX
+        weight: 1
+      - path: RootBone/Spina/SpallaSX/BraccioSX
+        weight: 1
+      - path: RootBone/AncaDX
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX/GambaDX
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX/GambaDX/PiedeDX01
+        weight: 1
+      - path: RootBone/AncaDX/CosciaDX/GambaDX/PiedeDX01/PiedeDX02
+        weight: 1
+      - path: RootBone/AncaSX
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX/GambaSX
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX/GambaSX/PiedeSX01
+        weight: 1
+      - path: RootBone/AncaSX/CosciaSX/GambaSX/PiedeSX01/PiedeSX02
+        weight: 1
+      - path: RootBone/Coda01
+        weight: 1
+      - path: RootBone/Coda01/Coda02
+        weight: 1
+      - path: RootBone/Coda01/Coda02/Coda03
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Sparo01
+      takeName: Rex2
+      firstFrame: 250
+      lastFrame: 270
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Scivola
+      takeName: Take 001
+      firstFrame: 271
+      lastFrame: 281
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.5
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: RootBone
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,354 @@
+fileFormatVersion: 2
+guid: 21915efaae20f3c4f84bfb5f5647d3a6
+timeCreated: 1515262202
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: base
+    100002: base001
+    100004: base003
+    100006: base004
+    100008: //RootNode
+    100010: bloccoGhiaccio
+    100012: botola
+    100014: Box002
+    100016: BoxCurvo
+    100018: brickDettails
+    100020: CodaSqualo
+    100022: coll
+    100024: Collider
+    100026: collider
+    100028: Collider001
+    100030: Collider002
+    100032: Collider003
+    100034: Collider004
+    100036: Collider005
+    100038: Cylinder002
+    100040: Discesa002
+    100042: Discesa01
+    100044: Entrata01
+    100046: Legname01
+    100048: Legno002
+    100050: Legno003
+    100052: Leva
+    100054: Leva01
+    100056: MovingPlatform001
+    100058: MovingPlatform002
+    100060: Pinna
+    100062: PinnaSqualo
+    100064: Plat003
+    100066: Plat004
+    100068: Plat005
+    100070: Plat005 1
+    100072: Plat006
+    100074: Plat008
+    100076: Plat01
+    100078: Plat01 1
+    100080: Plat010
+    100082: Plat011
+    100084: Plat012
+    100086: Plat012mini
+    100088: Plat012mini 1
+    100090: Plat013
+    100092: Plat02
+    100094: Plat02 1
+    100096: Ponticello01
+    100098: Ponticello01 1
+    100100: Porta01
+    100102: POrtaChiusa
+    100104: PortaLegno
+    100106: PortaLegno001
+    100108: PortaSpunzoni
+    100110: StipitiPOrtaLegno
+    100112: StipitiPOrtaLegno001
+    400000: base
+    400002: base001
+    400004: base003
+    400006: base004
+    400008: //RootNode
+    400010: bloccoGhiaccio
+    400012: botola
+    400014: Box002
+    400016: BoxCurvo
+    400018: brickDettails
+    400020: CodaSqualo
+    400022: coll
+    400024: Collider
+    400026: collider
+    400028: Collider001
+    400030: Collider002
+    400032: Collider003
+    400034: Collider004
+    400036: Collider005
+    400038: Cylinder002
+    400040: Discesa002
+    400042: Discesa01
+    400044: Entrata01
+    400046: Legname01
+    400048: Legno002
+    400050: Legno003
+    400052: Leva
+    400054: Leva01
+    400056: MovingPlatform001
+    400058: MovingPlatform002
+    400060: Pinna
+    400062: PinnaSqualo
+    400064: Plat003
+    400066: Plat004
+    400068: Plat005
+    400070: Plat005 1
+    400072: Plat006
+    400074: Plat008
+    400076: Plat01
+    400078: Plat01 1
+    400080: Plat010
+    400082: Plat011
+    400084: Plat012
+    400086: Plat012mini
+    400088: Plat012mini 1
+    400090: Plat013
+    400092: Plat02
+    400094: Plat02 1
+    400096: Ponticello01
+    400098: Ponticello01 1
+    400100: Porta01
+    400102: POrtaChiusa
+    400104: PortaLegno
+    400106: PortaLegno001
+    400108: PortaSpunzoni
+    400110: StipitiPOrtaLegno
+    400112: StipitiPOrtaLegno001
+    2300000: base
+    2300002: base001
+    2300004: base003
+    2300006: base004
+    2300008: bloccoGhiaccio
+    2300010: botola
+    2300012: Box002
+    2300014: BoxCurvo
+    2300016: brickDettails
+    2300018: CodaSqualo
+    2300020: coll
+    2300022: Collider
+    2300024: collider
+    2300026: Collider001
+    2300028: Collider002
+    2300030: Collider003
+    2300032: Collider004
+    2300034: Collider005
+    2300036: Cylinder002
+    2300038: Entrata01
+    2300040: Legname01
+    2300042: Legno002
+    2300044: Legno003
+    2300046: Leva
+    2300048: MovingPlatform001
+    2300050: MovingPlatform002
+    2300052: PinnaSqualo
+    2300054: Plat004
+    2300056: Plat005 1
+    2300058: Plat008
+    2300060: Plat01 1
+    2300062: Plat010
+    2300064: Plat011
+    2300066: Plat012mini 1
+    2300068: Plat013
+    2300070: Plat02 1
+    2300072: Ponticello01 1
+    2300074: PortaLegno
+    2300076: PortaLegno001
+    2300078: PortaSpunzoni
+    2300080: StipitiPOrtaLegno
+    2300082: StipitiPOrtaLegno001
+    2300084: //RootNode
+    3300000: base
+    3300002: base001
+    3300004: base003
+    3300006: base004
+    3300008: bloccoGhiaccio
+    3300010: botola
+    3300012: Box002
+    3300014: BoxCurvo
+    3300016: brickDettails
+    3300018: CodaSqualo
+    3300020: coll
+    3300022: Collider
+    3300024: collider
+    3300026: Collider001
+    3300028: Collider002
+    3300030: Collider003
+    3300032: Collider004
+    3300034: Collider005
+    3300036: Cylinder002
+    3300038: Entrata01
+    3300040: Legname01
+    3300042: Legno002
+    3300044: Legno003
+    3300046: Leva
+    3300048: MovingPlatform001
+    3300050: MovingPlatform002
+    3300052: PinnaSqualo
+    3300054: Plat004
+    3300056: Plat005 1
+    3300058: Plat008
+    3300060: Plat01 1
+    3300062: Plat010
+    3300064: Plat011
+    3300066: Plat012mini 1
+    3300068: Plat013
+    3300070: Plat02 1
+    3300072: Ponticello01 1
+    3300074: PortaLegno
+    3300076: PortaLegno001
+    3300078: PortaSpunzoni
+    3300080: StipitiPOrtaLegno
+    3300082: StipitiPOrtaLegno001
+    3300084: //RootNode
+    4300000: MovingPlatform001
+    4300002: Entrata01
+    4300004: Legname01
+    4300006: Collider001
+    4300008: Plat02
+    4300010: Plat01
+    4300012: Collider
+    4300014: StipitiPOrtaLegno
+    4300016: PortaLegno
+    4300018: Leva
+    4300020: Cylinder002
+    4300022: StipitiPOrtaLegno001
+    4300024: PortaLegno001
+    4300026: base
+    4300028: Collider002
+    4300030: Plat004
+    4300032: base001
+    4300034: Legno002
+    4300036: CodaSqualo
+    4300038: PinnaSqualo
+    4300040: base003
+    4300042: Plat005
+    4300044: Collider003
+    4300046: Collider004
+    4300048: Plat008
+    4300050: PortaSpunzoni
+    4300052: Legno003
+    4300054: MovingPlatform002
+    4300056: Plat010
+    4300058: Ponticello01
+    4300060: coll
+    4300062: BoxCurvo
+    4300064: Plat012mini
+    4300066: collider
+    4300068: Plat011
+    4300070: brickDettails
+    4300072: base004
+    4300074: Box002
+    4300076: Collider005
+    4300078: Plat013
+    4300080: botola
+    4300082: bloccoGhiaccio
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default
+    second: {fileID: 2100000, guid: b04f8b78784f7204aba9bfbdb39e8828, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 02 - Default
+    second: {fileID: 2100000, guid: 4a4e41fa63a9f5648a4f6ea920ba5f04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 09 - Default
+    second: {fileID: 2100000, guid: 374dfdcb1eaf02b4aae83b8347a1a16a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #0'
+    second: {fileID: 2100000, guid: 5d5473ee76818d1489a33d30046429e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 8c75b284f1dbd0b4190d36f92ec79719, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.2
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 0
+    normalImportMode: 1
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

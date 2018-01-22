@@ -1,0 +1,349 @@
+fileFormatVersion: 2
+guid: 41cecb52d3fb79e40b7516fd47428390
+timeCreated: 1508172960
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: acro01
+    100004: baseCIlindro
+    100006: baseMolla
+    100008: Bastone01
+    100010: Box002
+    100012: Box003
+    100014: Box004
+    100016: Box01
+    100018: BoxHole
+    100020: Cartello01
+    100022: Cronometro
+    100024: Cuore01
+    100026: EffectSphere
+    100028: Eraba01
+    100030: fiore01
+    100032: gem
+    100034: gem 1
+    100036: gem01
+    100038: gem03
+    100040: gem04
+    100042: gem05
+    100044: gem12
+    100046: "gem\xE5\xED\xFC07"
+    100048: "gem\xE5\xED\xFC08"
+    100050: "gem\xED\xFC10"
+    100052: "gem\xFC09"
+    100054: "gem\xFC11"
+    100056: "gem\xFC13"
+    100058: Liana01
+    100060: Molla
+    100062: PallaMaglio
+    100064: Peso01
+    100066: PlatRoccia01
+    100068: Portal01
+    100070: Punte0
+    100072: Punte01
+    100074: Ruota01
+    100076: Ruota01Collider
+    100078: SopraMolla
+    100080: Sphere001
+    100082: Spring
+    100084: Teleport
+    100086: Torus001
+    400000: //RootNode
+    400002: acro01
+    400004: baseCIlindro
+    400006: baseMolla
+    400008: Bastone01
+    400010: Box002
+    400012: Box003
+    400014: Box004
+    400016: Box01
+    400018: BoxHole
+    400020: Cartello01
+    400022: Cronometro
+    400024: Cuore01
+    400026: EffectSphere
+    400028: Eraba01
+    400030: fiore01
+    400032: gem
+    400034: gem 1
+    400036: gem01
+    400038: gem03
+    400040: gem04
+    400042: gem05
+    400044: gem12
+    400046: "gem\xE5\xED\xFC07"
+    400048: "gem\xE5\xED\xFC08"
+    400050: "gem\xED\xFC10"
+    400052: "gem\xFC09"
+    400054: "gem\xFC11"
+    400056: "gem\xFC13"
+    400058: Liana01
+    400060: Molla
+    400062: PallaMaglio
+    400064: Peso01
+    400066: PlatRoccia01
+    400068: Portal01
+    400070: Punte0
+    400072: Punte01
+    400074: Ruota01
+    400076: Ruota01Collider
+    400078: SopraMolla
+    400080: Sphere001
+    400082: Spring
+    400084: Teleport
+    400086: Torus001
+    2300000: //RootNode
+    2300002: acro01
+    2300004: baseCIlindro
+    2300006: baseMolla
+    2300008: Bastone01
+    2300010: Box002
+    2300012: Box003
+    2300014: Box004
+    2300016: Box01
+    2300018: BoxHole
+    2300020: Cartello01
+    2300022: Cronometro
+    2300024: Cuore01
+    2300026: EffectSphere
+    2300028: Eraba01
+    2300030: fiore01
+    2300032: gem
+    2300034: gem 1
+    2300036: gem01
+    2300038: gem03
+    2300040: gem04
+    2300042: gem05
+    2300044: gem12
+    2300046: "gem\xE5\xED\xFC07"
+    2300048: "gem\xE5\xED\xFC08"
+    2300050: "gem\xED\xFC10"
+    2300052: "gem\xFC09"
+    2300054: "gem\xFC11"
+    2300056: "gem\xFC13"
+    2300058: Liana01
+    2300060: Molla
+    2300062: PallaMaglio
+    2300064: Peso01
+    2300066: PlatRoccia01
+    2300068: Portal01
+    2300070: Punte01
+    2300072: Ruota01
+    2300074: Ruota01Collider
+    2300076: SopraMolla
+    2300078: Sphere001
+    2300080: Teleport
+    2300082: Torus001
+    3300000: //RootNode
+    3300002: acro01
+    3300004: baseCIlindro
+    3300006: baseMolla
+    3300008: Bastone01
+    3300010: Box002
+    3300012: Box003
+    3300014: Box004
+    3300016: Box01
+    3300018: BoxHole
+    3300020: Cartello01
+    3300022: Cronometro
+    3300024: Cuore01
+    3300026: EffectSphere
+    3300028: Eraba01
+    3300030: fiore01
+    3300032: gem
+    3300034: gem 1
+    3300036: gem01
+    3300038: gem03
+    3300040: gem04
+    3300042: gem05
+    3300044: gem12
+    3300046: "gem\xE5\xED\xFC07"
+    3300048: "gem\xE5\xED\xFC08"
+    3300050: "gem\xED\xFC10"
+    3300052: "gem\xFC09"
+    3300054: "gem\xFC11"
+    3300056: "gem\xFC13"
+    3300058: Liana01
+    3300060: Molla
+    3300062: PallaMaglio
+    3300064: Peso01
+    3300066: PlatRoccia01
+    3300068: Portal01
+    3300070: Punte01
+    3300072: Ruota01
+    3300074: Ruota01Collider
+    3300076: SopraMolla
+    3300078: Sphere001
+    3300080: Teleport
+    3300082: Torus001
+    4300000: Ruota01
+    4300002: EffectSphere
+    4300004: Bastone01
+    4300006: acro01
+    4300008: Cuore01
+    4300010: Box01
+    4300012: Portal01
+    4300014: Teleport
+    4300016: Cronometro
+    4300018: Box002
+    4300020: Box003
+    4300022: Torus001
+    4300024: Punte01
+    4300026: fiore01
+    4300028: Sphere001
+    4300030: Cartello01
+    4300032: PallaMaglio
+    4300034: Peso01
+    4300036: "gem\xFC13"
+    4300038: gem12
+    4300040: "gem\xFC11"
+    4300042: "gem\xED\xFC10"
+    4300044: "gem\xFC09"
+    4300046: "gem\xE5\xED\xFC08"
+    4300048: "gem\xE5\xED\xFC07"
+    4300050: gem
+    4300052: gem04
+    4300054: gem05
+    4300056: gem03
+    4300058: gem
+    4300060: gem01
+    4300062: Molla
+    4300064: SopraMolla
+    4300066: baseMolla
+    4300068: Box004
+    4300070: BoxHole
+    4300072: Eraba01
+    4300074: Liana01
+    4300076: baseCIlindro
+    4300078: PlatRoccia01
+    4300080: Ruota01Collider
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 07 - Default
+    second: {fileID: 2100000, guid: 8f91a8865e5345e43bdb182146f8c643, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 08 - Default
+    second: {fileID: 2100000, guid: ad43189dc8bfafb41b9d18f573370367, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 09 - Default
+    second: {fileID: 2100000, guid: a74437534451c4b4cb6eb44b8762a61d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 2
+    second: {fileID: 2100000, guid: a3f631e99834ef7439db5be173cf4190, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 3
+    second: {fileID: 2100000, guid: a6927d081f0b13042bca00ec9617700e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #22'
+    second: {fileID: 2100000, guid: 0f38783355694e644a5aef8db8a3191f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 8c75b284f1dbd0b4190d36f92ec79719, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _Giana_1Tex_0003_0_dds
+    second: {fileID: 2100000, guid: 24bf0d315150d4f43aea878e57a9558a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: base
+    second: {fileID: 2100000, guid: dcc53d02ce7cf0d46bfc40fcd1174c2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: base2
+    second: {fileID: 2100000, guid: 004712548d7c32f498fabc4baca103a2, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.3
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

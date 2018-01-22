@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: rock_002
+  m_Shader: {fileID: 4800000, guid: 054a31a99d11e49d110086ba44295342, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: d440902fad11e807d00044888d76c639, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 8ebd626538fccea47976f91abf3106e3, type: 3}
+        m_Scale: {x: 3, y: 3}
+        m_Offset: {x: 0, y: 1}
+    - _Ramp:
+        m_Texture: {fileID: 2800000, guid: 3b62a16ab15885b46827b0199579185a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Outline: 0.002
+    - _Shininess: 0.14095406
+    m_Colors:
+    - _Color: {r: 0.46551725, g: 0.36041343, b: 0.21906693, a: 1}
+    - _OutlineColor: {r: 0.4862069, g: 0.24331373, b: 0.014300187, a: 1}
+    - _SpecColor: {r: 0.619403, g: 0.537234, b: 0.42988417, a: 1}

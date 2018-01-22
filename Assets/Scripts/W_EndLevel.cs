@@ -1,0 +1,99 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using UnityStandardAssets.CrossPlatformInput;
+
+public class W_EndLevel : MonoBehaviour {
+
+    public GameObject OpenEffect;
+    public AudioClip LevelCompleteSound;
+    public AudioClip OpenPortalSound;
+    public bool StartOpen = false;
+
+
+    void Start () {
+
+        //Lo rende invisibile e non attivo
+        GameUI.Instance.LevelCompleteMessageUI.GetComponent<CanvasGroup>().interactable = false;
+        GameUI.Instance.LevelCompleteMessageUI.GetComponent<CanvasGroup>().blocksRaycasts = false;
+        GameUI.Instance.LevelCompleteMessageUI.transform.GetComponent<CanvasGroup>().alpha = 0;
+        GameUI.Instance.LevelCompleteMessageUI.GetComponentInChildren<Animator>().enabled = false;
+
+        //Disabilito l'effetto grafico del portale aperto
+        OpenEffect.SetActive(false);
+
+        if (!GameManager.Instance.debugMode)
+        GetComponent<Renderer>().enabled = false;
+
+        if (StartOpen) OpenPortalEffect();
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        BlinkUseButton.DeActive();
+    }
+
+
+    void OnTriggerStay (Collider col) {
+        if (col.gameObject.tag.Equals("Player"))
+        {
+
+            BlinkUseButton.Active();
+            if (CrossPlatformInputManager.GetButton("Inside") || Input.GetKey(KeyCode.W))
+            {
+
+                //Se il livello risulta già completato 
+                if (GameManager.LevelComplete) return;
+            //O se il personaggio ha già perso
+            if (GameManager.Lose) return;
+
+            //Se sono state raccolte tutte le stelle necessarie
+            if (W_PlayerPoints.StarsComplete)
+                LivelloCompletato();
+            else
+                MoreStarsNeededMessage();
+            }
+        }
+	}
+    public void MoreStarsNeededMessage()
+    {
+
+        if (OpenEffect.activeInHierarchy) return;
+
+       GameUI.Instance._MoreStarsNeeded.SetActive(true);
+    }
+
+    public void OpenPortalEffect() {
+
+        if (OpenEffect.activeInHierarchy) return;
+
+        OpenEffect.SetActive(true);
+        GameManager.MasterAudioSource.PlayOneShot(OpenPortalSound);
+        GameUI.Instance.ShowUseButton();
+    }
+
+   public void LivelloCompletato()
+    {
+        //Segnala che il livello è completato
+        GameManager.LevelComplete = true;
+
+        //Attiva il messaggio a schermo
+        GameUI.Instance.LevelCompleteMessageUI.gameObject.SetActive(true);
+        GameUI.Instance.LevelCompleteMessageUI.GetComponent<CanvasGroup>().interactable = true; //Attiva i pulsanti
+        GameUI.Instance.LevelCompleteMessageUI.transform.GetComponent<CanvasGroup>().alpha = 1;//Visualizza la grafica del livello completato
+        GameUI.Instance.LevelCompleteMessageUI.GetComponentInChildren<Animator>().enabled = true;
+        GameUI.Instance.LevelCompleteMessageUI.GetComponent<CanvasGroup>().blocksRaycasts = true;
+        GameUI.Instance.LevelCompleteMessageUI.GetComponent<CanvasGroup>().interactable = true;
+        GameManager.MasterAudioSource.PlayOneShot(LevelCompleteSound);
+
+        //Calcola i punti fatti in questo livello aggiungendo anche il tempo rimasto 
+        W_PlayerPoints._istance.LevelComplete();
+
+      
+    }
+
+
+
+}

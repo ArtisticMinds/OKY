@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - EnterTrigger
+  - FxTemporaire
+  - Soft
+  - StopFollowPlayer
+  - Terrain
+  - PlayerShot
+  - Ice
+  - Enemy
+  - PlayerFoot
+  - GelidWaters
+  - AttackParent
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - GroundCollider
+  - Player
+  - Shots
+  - Enemies
+  - Tower
+  - Items
+  - Soft
+  - PlayerShot
+  - PlayerShotReceiver
+  - Meteore
+  - DeadTrigger
+  - RuotaColliders
+  - NoCrounch
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: 1
+    uniqueID: 2878763331
+    locked: 0
+  - name: 2
+    uniqueID: 2422770701
+    locked: 0
