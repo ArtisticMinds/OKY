@@ -27131,6 +27131,7 @@ MonoBehaviour:
   AddPointsOnEnter: 200
   AddToSecretsAreaCount: 1
   RandomActivation: 0
+  randomRange: 3
   ActiveOnEnemy: 0
   DetackObject: {fileID: 0}
   ActivateObject: {fileID: 0}
@@ -31063,12 +31064,12 @@ Prefab:
     - target: {fileID: 224680175120894806, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 197
+      value: 640
       objectReference: {fileID: 0}
     - target: {fileID: 224680175120894806, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 123
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 224680175120894806, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
@@ -31153,12 +31154,12 @@ Prefab:
     - target: {fileID: 224876323699544886, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 640.32513
+      value: 640
       objectReference: {fileID: 0}
     - target: {fileID: 224876323699544886, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 422.79688
+      value: 423
       objectReference: {fileID: 0}
     - target: {fileID: 224044140518357170, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
@@ -31173,12 +31174,12 @@ Prefab:
     - target: {fileID: 224474219603777782, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -580.32513
+      value: -580
       objectReference: {fileID: 0}
     - target: {fileID: 224474219603777782, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -379.7969
+      value: -380
       objectReference: {fileID: 0}
     - target: {fileID: 224584509893920080, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
@@ -31208,12 +31209,12 @@ Prefab:
     - target: {fileID: 224114019147718222, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -640.32513
+      value: -640
       objectReference: {fileID: 0}
     - target: {fileID: 224114019147718222, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 419.79688
+      value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 224341403288466816, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
@@ -31243,12 +31244,12 @@ Prefab:
     - target: {fileID: 224660042059992362, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 580.32513
+      value: 580
       objectReference: {fileID: 0}
     - target: {fileID: 224660042059992362, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -379.7969
+      value: -380
       objectReference: {fileID: 0}
     - target: {fileID: 224379330282791628, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
@@ -42950,6 +42951,9 @@ MonoBehaviour:
   ShadowDistanceOverride: 0
   StartUseHidden: 0
   AddCadutaMultipler: 0
+  AddAltitude: 1
+  AddRemovePointsAtEnd: 0
+  AddRemoveGravity: 0
 --- !u!1 &609708984
 GameObject:
   m_ObjectHideFlags: 0
@@ -43377,6 +43381,7 @@ MonoBehaviour:
   AddPointsOnEnter: 0
   AddToSecretsAreaCount: 0
   RandomActivation: 0
+  randomRange: 3
   ActiveOnEnemy: 0
   DetackObject: {fileID: 0}
   ActivateObject: {fileID: 0}
@@ -62478,6 +62483,7 @@ MonoBehaviour:
   AddPointsOnEnter: 0
   AddToSecretsAreaCount: 0
   RandomActivation: 0
+  randomRange: 3
   ActiveOnEnemy: 0
   DetackObject: {fileID: 0}
   ActivateObject: {fileID: 0}
@@ -74951,6 +74957,7 @@ MonoBehaviour:
   AddPointsOnEnter: 0
   AddToSecretsAreaCount: 0
   RandomActivation: 0
+  randomRange: 3
   ActiveOnEnemy: 0
   DetackObject: {fileID: 0}
   ActivateObject: {fileID: 0}
@@ -79041,6 +79048,7 @@ MonoBehaviour:
   AddPointsOnEnter: 0
   AddToSecretsAreaCount: 0
   RandomActivation: 0
+  randomRange: 3
   ActiveOnEnemy: 0
   DetackObject: {fileID: 0}
   ActivateObject: {fileID: 0}
@@ -82429,7 +82437,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243096318778725606, guid: 9bed56d8ab617a24d8bbf7adcebf3135,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: bd2c5f78057b61346ad432fc0c89663a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 05099a265964e434c9b3a3e62c1edb24, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -121137,6 +121145,7 @@ MonoBehaviour:
   AddPointsOnEnter: 200
   AddToSecretsAreaCount: 1
   RandomActivation: 0
+  randomRange: 3
   ActiveOnEnemy: 0
   DetackObject: {fileID: 0}
   ActivateObject: {fileID: 0}

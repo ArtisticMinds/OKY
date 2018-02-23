@@ -125,7 +125,7 @@ public class W_PlayerPoints : MonoBehaviour
  
 
             //Calcolo il punteggio in base alle stelle prese e al tempo rimasto (più PointsByOther e PointsByDataTime)
-            ThisLevelActualPoints = ((int)PointsByRemainingTime + PointsByStars+ PointsByOther+ PointsByEnergy+ PointsByDataTime);
+            ThisLevelActualPoints = ((int)PointsByRemainingTime + PointsByStars+ PointsByOther+ PointsByEnergy+ PointsByDataTime+GameManager.ThisLevelManager.AddRemovePointsAtEnd);
          print("PointsByDataTime:"+ PointsByDataTime+" PointsByRemainingTime;" + PointsByRemainingTime + " PointsByStars:" + PointsByStars + " PointsByEnergy:" + PointsByEnergy + "   ThisLevelActualPoints:<color=#FFFFFFF>" + ThisLevelActualPoints + "</color>");
 
         //Alla fine il punteggio massimo può arrivare a circa 5500, se prese tutte le stelline, tutte le aree segrete e con energia massima, dunque 

@@ -9,9 +9,9 @@ public class WorldLevelsPanel : MonoBehaviour
 {
 
  
-    public SceneField[] scenes;
+   // public SceneField[] scenes;
 
-    public GameObject PannelloLivelli;
+   // public GameObject PannelloLivelli;
     public GameObject Loading;
 
 
@@ -41,9 +41,9 @@ public class WorldLevelsPanel : MonoBehaviour
 
         Loading.SetActive(false);
 
-        if (PannelloLivelli.transform.childCount > 0)//Se c'è almeno un children
-            foreach (Transform item in PannelloLivelli.transform.GetComponentInChildren<Transform>())
-                Destroy(item.gameObject);//Cancella le icone dei livelli
+        //if (PannelloLivelli.transform.childCount > 0)//Se c'è almeno un children
+        //    foreach (Transform item in PannelloLivelli.transform.GetComponentInChildren<Transform>())
+        //        Destroy(item.gameObject);//Cancella le icone dei livelli
 
 
     }

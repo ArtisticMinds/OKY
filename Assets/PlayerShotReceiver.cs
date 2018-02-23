@@ -8,6 +8,7 @@ public class PlayerShotReceiver : MonoBehaviour {
    public Alien01 Alien01Receiver;
     Boss01 boss01Receiver;
     Boss02 boss02Receiver;
+    YetyBoss boss03Receiver;
     Neanderthal Neanderthal01Receiver;
     Collider thisTrigger;
     public float DamageMultipler = 1;
@@ -17,6 +18,7 @@ public class PlayerShotReceiver : MonoBehaviour {
         Alien01Receiver = GetComponentInParent<Alien01>();
         boss01Receiver = GetComponentInParent<Boss01>();
         boss02Receiver = GetComponentInParent<Boss02>();
+        boss03Receiver = GetComponentInParent<YetyBoss>();
         Neanderthal01Receiver = GetComponentInParent<Neanderthal>();
         thisTrigger = GetComponent<Collider>();
     }
@@ -46,6 +48,10 @@ public class PlayerShotReceiver : MonoBehaviour {
             else if (boss02Receiver)
             {
                 boss02Receiver.RemoveEnergy(col.transform.GetComponent<W_playerProjectile>().Power * DamageMultipler);
+            }
+            else if (boss03Receiver)
+            {
+                boss03Receiver.RemoveEnergy(col.transform.GetComponent<W_playerProjectile>().Power * DamageMultipler);
             }
 
             if (Neanderthal01Receiver)

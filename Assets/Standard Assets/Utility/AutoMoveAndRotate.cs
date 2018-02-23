@@ -14,6 +14,7 @@ namespace UnityStandardAssets.Utility
         public bool UseWilezRotation=true;
         public bool IsVisible = false;
 
+
         private void Awake()
         {
             m_LastRealTime = Time.realtimeSinceStartup;

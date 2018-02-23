@@ -35,6 +35,7 @@ public class W_SceneItem : MonoBehaviour
    public void CheckIfOpen()
     {
 
+
         //Se non è un bonus
         if (!IsBonus)
         {
@@ -94,6 +95,7 @@ public class W_SceneItem : MonoBehaviour
 
     void OnEnable()
     {
+
 
         UpdateStatus();
 

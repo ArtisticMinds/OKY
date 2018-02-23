@@ -1,0 +1,1048 @@
+fileFormatVersion: 2
+guid: 0737dabf15a47814aba943bb7db7f3ab
+timeCreated: 1518220518
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: eyeBrowns
+    100002: eyes
+    100004: Head
+    100006: Hips
+    100008: LeftArm
+    100010: LeftFoot
+    100012: LeftForeArm
+    100014: LeftHand
+    100016: LeftLeg
+    100018: LeftShoulder
+    100020: LeftToeBase
+    100022: LeftUpLeg
+    100024: Neck
+    100026: Reference
+    100028: RightArm
+    100030: RightFoot
+    100032: RightForeArm
+    100034: RightHand
+    100036: RightLeg
+    100038: RightShoulder
+    100040: RightToeBase
+    100042: RightUpLeg
+    100044: Spine
+    100046: Spine1
+    100048: Spine2
+    100050: theeth
+    100052: yeti
+    100054: //RootNode
+    100056: YetiCharacter_Ctrl_ChestEndEffector
+    100058: YetiCharacter_Ctrl_ChestOriginEffector
+    100060: YetiCharacter_Ctrl_Head
+    100062: YetiCharacter_Ctrl_HeadEffector
+    100064: YetiCharacter_Ctrl_Hips
+    100066: YetiCharacter_Ctrl_HipsEffector
+    100068: YetiCharacter_Ctrl_LeftAnkleEffector
+    100070: YetiCharacter_Ctrl_LeftArm
+    100072: YetiCharacter_Ctrl_LeftElbowEffector
+    100074: YetiCharacter_Ctrl_LeftFoot
+    100076: YetiCharacter_Ctrl_LeftFootEffector
+    100078: YetiCharacter_Ctrl_LeftForeArm
+    100080: YetiCharacter_Ctrl_LeftHand
+    100082: YetiCharacter_Ctrl_LeftHipEffector
+    100084: YetiCharacter_Ctrl_LeftKneeEffector
+    100086: YetiCharacter_Ctrl_LeftLeg
+    100088: YetiCharacter_Ctrl_LeftShoulder
+    100090: YetiCharacter_Ctrl_LeftShoulderEffector
+    100092: YetiCharacter_Ctrl_LeftToeBase
+    100094: YetiCharacter_Ctrl_LeftUpLeg
+    100096: YetiCharacter_Ctrl_LeftWristEffector
+    100098: YetiCharacter_Ctrl_Neck
+    100100: YetiCharacter_Ctrl_Reference
+    100102: YetiCharacter_Ctrl_RightAnkleEffector
+    100104: YetiCharacter_Ctrl_RightArm
+    100106: YetiCharacter_Ctrl_RightElbowEffector
+    100108: YetiCharacter_Ctrl_RightFoot
+    100110: YetiCharacter_Ctrl_RightFootEffector
+    100112: YetiCharacter_Ctrl_RightForeArm
+    100114: YetiCharacter_Ctrl_RightHand
+    100116: YetiCharacter_Ctrl_RightHipEffector
+    100118: YetiCharacter_Ctrl_RightKneeEffector
+    100120: YetiCharacter_Ctrl_RightLeg
+    100122: YetiCharacter_Ctrl_RightShoulder
+    100124: YetiCharacter_Ctrl_RightShoulderEffector
+    100126: YetiCharacter_Ctrl_RightToeBase
+    100128: YetiCharacter_Ctrl_RightUpLeg
+    100130: YetiCharacter_Ctrl_RightWristEffector
+    100132: YetiCharacter_Ctrl_Spine
+    100134: YetiCharacter_Ctrl_Spine1
+    100136: YetiCharacter_Ctrl_Spine2
+    100138: YetiCharacter_Guides
+    100140: YetiCharacter_Head
+    100142: YetiCharacter_Hips
+    100144: YetiCharacter_LeftArm
+    100146: YetiCharacter_LeftFoot
+    100148: YetiCharacter_LeftForeArm
+    100150: YetiCharacter_LeftHand
+    100152: YetiCharacter_LeftLeg
+    100154: YetiCharacter_LeftShoulder
+    100156: YetiCharacter_LeftToeBase
+    100158: YetiCharacter_LeftUpLeg
+    100160: YetiCharacter_Neck
+    100162: YetiCharacter_Reference
+    100164: YetiCharacter_RightArm
+    100166: YetiCharacter_RightFoot
+    100168: YetiCharacter_RightForeArm
+    100170: YetiCharacter_RightHand
+    100172: YetiCharacter_RightLeg
+    100174: YetiCharacter_RightShoulder
+    100176: YetiCharacter_RightToeBase
+    100178: YetiCharacter_RightUpLeg
+    100180: YetiCharacter_Spine
+    100182: YetiCharacter_Spine1
+    100184: YetiCharacter_Spine2
+    400000: eyeBrowns
+    400002: eyes
+    400004: Head
+    400006: Hips
+    400008: LeftArm
+    400010: LeftFoot
+    400012: LeftForeArm
+    400014: LeftHand
+    400016: LeftLeg
+    400018: LeftShoulder
+    400020: LeftToeBase
+    400022: LeftUpLeg
+    400024: Neck
+    400026: Reference
+    400028: RightArm
+    400030: RightFoot
+    400032: RightForeArm
+    400034: RightHand
+    400036: RightLeg
+    400038: RightShoulder
+    400040: RightToeBase
+    400042: RightUpLeg
+    400044: Spine
+    400046: Spine1
+    400048: Spine2
+    400050: theeth
+    400052: yeti
+    400054: //RootNode
+    400056: YetiCharacter_Ctrl_ChestEndEffector
+    400058: YetiCharacter_Ctrl_ChestOriginEffector
+    400060: YetiCharacter_Ctrl_Head
+    400062: YetiCharacter_Ctrl_HeadEffector
+    400064: YetiCharacter_Ctrl_Hips
+    400066: YetiCharacter_Ctrl_HipsEffector
+    400068: YetiCharacter_Ctrl_LeftAnkleEffector
+    400070: YetiCharacter_Ctrl_LeftArm
+    400072: YetiCharacter_Ctrl_LeftElbowEffector
+    400074: YetiCharacter_Ctrl_LeftFoot
+    400076: YetiCharacter_Ctrl_LeftFootEffector
+    400078: YetiCharacter_Ctrl_LeftForeArm
+    400080: YetiCharacter_Ctrl_LeftHand
+    400082: YetiCharacter_Ctrl_LeftHipEffector
+    400084: YetiCharacter_Ctrl_LeftKneeEffector
+    400086: YetiCharacter_Ctrl_LeftLeg
+    400088: YetiCharacter_Ctrl_LeftShoulder
+    400090: YetiCharacter_Ctrl_LeftShoulderEffector
+    400092: YetiCharacter_Ctrl_LeftToeBase
+    400094: YetiCharacter_Ctrl_LeftUpLeg
+    400096: YetiCharacter_Ctrl_LeftWristEffector
+    400098: YetiCharacter_Ctrl_Neck
+    400100: YetiCharacter_Ctrl_Reference
+    400102: YetiCharacter_Ctrl_RightAnkleEffector
+    400104: YetiCharacter_Ctrl_RightArm
+    400106: YetiCharacter_Ctrl_RightElbowEffector
+    400108: YetiCharacter_Ctrl_RightFoot
+    400110: YetiCharacter_Ctrl_RightFootEffector
+    400112: YetiCharacter_Ctrl_RightForeArm
+    400114: YetiCharacter_Ctrl_RightHand
+    400116: YetiCharacter_Ctrl_RightHipEffector
+    400118: YetiCharacter_Ctrl_RightKneeEffector
+    400120: YetiCharacter_Ctrl_RightLeg
+    400122: YetiCharacter_Ctrl_RightShoulder
+    400124: YetiCharacter_Ctrl_RightShoulderEffector
+    400126: YetiCharacter_Ctrl_RightToeBase
+    400128: YetiCharacter_Ctrl_RightUpLeg
+    400130: YetiCharacter_Ctrl_RightWristEffector
+    400132: YetiCharacter_Ctrl_Spine
+    400134: YetiCharacter_Ctrl_Spine1
+    400136: YetiCharacter_Ctrl_Spine2
+    400138: YetiCharacter_Guides
+    400140: YetiCharacter_Head
+    400142: YetiCharacter_Hips
+    400144: YetiCharacter_LeftArm
+    400146: YetiCharacter_LeftFoot
+    400148: YetiCharacter_LeftForeArm
+    400150: YetiCharacter_LeftHand
+    400152: YetiCharacter_LeftLeg
+    400154: YetiCharacter_LeftShoulder
+    400156: YetiCharacter_LeftToeBase
+    400158: YetiCharacter_LeftUpLeg
+    400160: YetiCharacter_Neck
+    400162: YetiCharacter_Reference
+    400164: YetiCharacter_RightArm
+    400166: YetiCharacter_RightFoot
+    400168: YetiCharacter_RightForeArm
+    400170: YetiCharacter_RightHand
+    400172: YetiCharacter_RightLeg
+    400174: YetiCharacter_RightShoulder
+    400176: YetiCharacter_RightToeBase
+    400178: YetiCharacter_RightUpLeg
+    400180: YetiCharacter_Spine
+    400182: YetiCharacter_Spine1
+    400184: YetiCharacter_Spine2
+    2100000: yetiCompleteShad
+    2300000: eyeBrowns
+    2300002: eyes
+    2300004: theeth
+    2300006: yeti
+    3300000: eyeBrowns
+    3300002: eyes
+    3300004: theeth
+    3300006: yeti
+    4300000: yeti
+    4300002: eyes
+    4300004: theeth
+    4300006: eyeBrowns
+    7400000: Idle
+    7400002: Idle to Walk
+    7400004: Walk_Cycle
+    7400006: Walk to Idle
+    9500000: //RootNode
+    13700000: eyeBrowns
+    13700002: eyes
+    13700004: theeth
+    13700006: yeti
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle to Walk
+      takeName: Take 001
+      firstFrame: 120
+      lastFrame: 180
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk_Cycle
+      takeName: Take 001
+      firstFrame: 180
+      lastFrame: 260
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk to Idle
+      takeName: Take 001
+      firstFrame: 260
+      lastFrame: 320
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: YetiCharacter_Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YetiCharacter_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YetiCharacter_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YetiCharacter_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YetiCharacter_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YetiCharacter_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YetiCharacter_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YetiCharacter_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YetiCharacter_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YetiCharacter_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YetiCharacter_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YetiCharacter_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YetiCharacter_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YetiCharacter_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YetiCharacter_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YetiCharacter_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YetiCharacter_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YetiCharacter_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YetiCharacter_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YetiCharacter_LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YetiCharacter_RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YetiCharacter_Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Yeti_Animation(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: eyeBrowns
+      parentName: Yeti_Animation(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: eyes
+      parentName: Yeti_Animation(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: theeth
+      parentName: Yeti_Animation(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: yeti
+      parentName: Yeti_Animation(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_Reference
+      parentName: Yeti_Animation(Clone)
+      position: {x: -0, y: 0, z: 0.6491635}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_ChestEndEffector
+      parentName: YetiCharacter_Ctrl_Reference
+      position: {x: -0, y: 6.5252123, z: -0.37923712}
+      rotation: {x: -2.7755578e-16, y: 8.3729114e-17, z: -3.81156e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_ChestOriginEffector
+      parentName: YetiCharacter_Ctrl_Reference
+      position: {x: -5.823313e-17, y: 3.2642183, z: -0.66526294}
+      rotation: {x: -4.8572257e-17, y: -1.10691457e-16, z: -1.0245766e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_HeadEffector
+      parentName: YetiCharacter_Ctrl_Reference
+      position: {x: -3.0279052e-17, y: 8.708589, z: 0.61674905}
+      rotation: {x: 1.4163847e-16, y: 2.7415802e-32, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_Hips
+      parentName: YetiCharacter_Ctrl_Reference
+      position: {x: 1.7739351e-18, y: 2.567702, z: -0.39501524}
+      rotation: {x: 1.4163847e-16, y: 1.110223e-16, z: -1.5725029e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_LeftUpLeg
+      parentName: YetiCharacter_Ctrl_Hips
+      position: {x: -0.53485626, y: -0.171345, z: -0.007989094}
+      rotation: {x: -1.4163847e-16, y: 1.110223e-16, z: 1.5725029e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_LeftLeg
+      parentName: YetiCharacter_Ctrl_LeftUpLeg
+      position: {x: -0, y: -1.1419001, z: 0}
+      rotation: {x: -0.000000059604645, y: 8.326675e-17, z: 1.0267177e-23, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_LeftFoot
+      parentName: YetiCharacter_Ctrl_LeftLeg
+      position: {x: -0, y: -0.56777626, z: 0}
+      rotation: {x: 0.000000059604645, y: -1.6134502e-16, z: 1.6144688e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_LeftToeBase
+      parentName: YetiCharacter_Ctrl_LeftFoot
+      position: {x: -0.0000007748604, y: -0.3927854, z: 1.2275383}
+      rotation: {x: 3.469142e-32, y: -0, z: -1.2246467e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_RightUpLeg
+      parentName: YetiCharacter_Ctrl_Hips
+      position: {x: 0.53485626, y: -0.171345, z: -0.007989094}
+      rotation: {x: 3.0032592e-17, y: -3.441045e-16, z: -0.00000002979036, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_RightLeg
+      parentName: YetiCharacter_Ctrl_RightUpLeg
+      position: {x: 0.000000059604645, y: -1.1419001, z: 0.000011175871}
+      rotation: {x: -0.000000012147999, y: -1.1657342e-15, z: 0.00000009203427, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_RightFoot
+      parentName: YetiCharacter_Ctrl_RightLeg
+      position: {x: -0, y: -0.56777626, z: 0}
+      rotation: {x: 6.6216353e-14, y: 3.850435e-16, z: -0.00000006224391, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_RightToeBase
+      parentName: YetiCharacter_Ctrl_RightFoot
+      position: {x: 0.00010281801, y: -0.3927854, z: 1.2275383}
+      rotation: {x: 3.469142e-32, y: -0, z: -1.2246467e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_Spine
+      parentName: YetiCharacter_Ctrl_Hips
+      position: {x: 4.9303807e-32, y: 0.6965163, z: -0.27024773}
+      rotation: {x: -2.0816682e-17, y: 4.0519836e-17, z: 5.2873726e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_Spine1
+      parentName: YetiCharacter_Ctrl_Spine
+      position: {x: -9.8607613e-32, y: 1.3703132, z: -0.106026635}
+      rotation: {x: -8.059698e-33, y: 0, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_Spine2
+      parentName: YetiCharacter_Ctrl_Spine1
+      position: {x: 1.9721523e-31, y: 1.6322098, z: -0.3673149}
+      rotation: {x: -2.7755578e-16, y: -9.925019e-17, z: -1.2383778e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_LeftShoulder
+      parentName: YetiCharacter_Ctrl_Spine2
+      position: {x: -1.1190115, y: 0.258471, z: 0.7593674}
+      rotation: {x: 2.7755576e-17, y: 5.551115e-17, z: -2.220446e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_LeftArm
+      parentName: YetiCharacter_Ctrl_LeftShoulder
+      position: {x: -0.93106663, y: -0.63562775, z: -0.7317772}
+      rotation: {x: -4.718447e-15, y: -0.000000052154064, z: -0.00000008940697, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_LeftForeArm
+      parentName: YetiCharacter_Ctrl_LeftArm
+      position: {x: -3.2294195, y: 0, z: 1.110223e-16}
+      rotation: {x: -0.00000001490116, y: 0.000000107765, z: 0.00000014321743, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_LeftHand
+      parentName: YetiCharacter_Ctrl_LeftForeArm
+      position: {x: -2.6854334, y: 0, z: 0}
+      rotation: {x: 0.000000014901143, y: 0.00000016143392, z: -0.000000053810453,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_Neck
+      parentName: YetiCharacter_Ctrl_Spine2
+      position: {x: -1.1093356e-31, y: 0.7664223, z: 0.66735834}
+      rotation: {x: -1.3877789e-16, y: 7.224784e-17, z: 1.3446063e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_Head
+      parentName: YetiCharacter_Ctrl_Neck
+      position: {x: -1.8951151e-31, y: 1.675425, z: 1.0879953}
+      rotation: {x: 1.4163847e-16, y: 1.110223e-16, z: -1.5725029e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_RightShoulder
+      parentName: YetiCharacter_Ctrl_Spine2
+      position: {x: 1.1190115, y: 0.258471, z: 0.7593674}
+      rotation: {x: 2.7755576e-17, y: -5.551115e-17, z: 2.220446e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_RightArm
+      parentName: YetiCharacter_Ctrl_RightShoulder
+      position: {x: 0.93106663, y: -0.63562775, z: -0.7317772}
+      rotation: {x: -1.7763568e-15, y: -0.000000029802322, z: -0.000000059604645,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_RightForeArm
+      parentName: YetiCharacter_Ctrl_RightArm
+      position: {x: 3.2294195, y: 0, z: 1.110223e-16}
+      rotation: {x: 1.0547119e-15, y: -0.00000004083649, z: 0.000000025935329, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_RightHand
+      parentName: YetiCharacter_Ctrl_RightForeArm
+      position: {x: 2.6854334, y: 0, z: 0}
+      rotation: {x: 2.276452e-15, y: -0.00000006428527, z: 0.000000033669306, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_HipsEffector
+      parentName: YetiCharacter_Ctrl_Reference
+      position: {x: -0, y: 2.396357, z: -0.40300435}
+      rotation: {x: 1.4163847e-16, y: 2.7415802e-32, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_LeftAnkleEffector
+      parentName: YetiCharacter_Ctrl_Reference
+      position: {x: -0.53485626, y: 0.68668073, z: -0.40300435}
+      rotation: {x: -1.0952388e-16, y: 2.706787e-16, z: -1.7979403e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_LeftElbowEffector
+      parentName: YetiCharacter_Ctrl_Reference
+      position: {x: -5.2794976, y: 5.889584, z: -1.1110134}
+      rotation: {x: -2.6007432e-10, y: 9.705938e-10, z: 9.391696e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_LeftFootEffector
+      parentName: YetiCharacter_Ctrl_Reference
+      position: {x: -0.53485703, y: 0.29389533, z: 0.8245342}
+      rotation: {x: 3.469142e-32, y: -0, z: -1.2246467e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_LeftHipEffector
+      parentName: YetiCharacter_Ctrl_Reference
+      position: {x: -0.53485626, y: 2.396357, z: -0.40300435}
+      rotation: {x: -1.4163847e-16, y: 2.7415802e-32, z: 1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_LeftKneeEffector
+      parentName: YetiCharacter_Ctrl_Reference
+      position: {x: -0.53485626, y: 1.254457, z: -0.40300435}
+      rotation: {x: -0.0000000010402974, y: 1.7919607e-25, z: 1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_LeftShoulderEffector
+      parentName: YetiCharacter_Ctrl_Reference
+      position: {x: -2.0500782, y: 5.8895845, z: -1.1110144}
+      rotation: {x: -7.9963186e-17, y: -9.1026015e-10, z: -0.000000001560446, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_LeftWristEffector
+      parentName: YetiCharacter_Ctrl_Reference
+      position: {x: -7.964931, y: 5.889584, z: -1.1110127}
+      rotation: {x: 4.065041e-33, y: 0.000000003788147, z: -1.0730948e-24, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_RightAnkleEffector
+      parentName: YetiCharacter_Ctrl_Reference
+      position: {x: 0.5348563, y: 0.68668073, z: -0.40299314}
+      rotation: {x: -1.5340036e-12, y: -4.0154783e-16, z: -1.3552527e-20, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_RightElbowEffector
+      parentName: YetiCharacter_Ctrl_Reference
+      position: {x: 5.2794976, y: 5.889584, z: -1.111014}
+      rotation: {x: -4.078573e-17, y: -0.0000000012328798, z: -5.8764044e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_RightFootEffector
+      parentName: YetiCharacter_Ctrl_Reference
+      position: {x: 0.53495914, y: 0.29389533, z: 0.82454515}
+      rotation: {x: 3.469142e-32, y: -0, z: -1.2246467e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_RightHipEffector
+      parentName: YetiCharacter_Ctrl_Reference
+      position: {x: 0.53485626, y: 2.396357, z: -0.40300435}
+      rotation: {x: 3.0032483e-17, y: 4.9680865e-13, z: 0.000000050766815, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_RightKneeEffector
+      parentName: YetiCharacter_Ctrl_Reference
+      position: {x: 0.5348563, y: 1.254457, z: -0.4029932}
+      rotation: {x: -1.4163847e-16, y: -1.5387051e-25, z: 0.0000000010863613, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_RightShoulderEffector
+      parentName: YetiCharacter_Ctrl_Reference
+      position: {x: 2.0500782, y: 5.8895845, z: -1.1110144}
+      rotation: {x: -3.0462167e-17, y: -5.2014865e-10, z: -0.0000000010402973, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Ctrl_RightWristEffector
+      parentName: YetiCharacter_Ctrl_Reference
+      position: {x: 7.964931, y: 5.889584, z: -1.1110138}
+      rotation: {x: 2.8838832e-25, y: -0.0000000023548694, z: 3.786919e-25, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Guides
+      parentName: Yeti_Animation(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Head
+      parentName: YetiCharacter_Guides
+      position: {x: -0, y: 8.708589, z: 1.2659125}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hips
+      parentName: YetiCharacter_Guides
+      position: {x: -0, y: 2.567702, z: 0.25414824}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftArm
+      parentName: YetiCharacter_Guides
+      position: {x: -2.0500782, y: 5.8895845, z: -0.4618508}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftFoot
+      parentName: YetiCharacter_Guides
+      position: {x: -0.57550865, y: 0.6895096, z: 0.15691282}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftForeArm
+      parentName: YetiCharacter_Guides
+      position: {x: -5.2753167, y: 5.7314563, z: -0.41730517}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftHand
+      parentName: YetiCharacter_Guides
+      position: {x: -7.9602914, y: 5.719287, z: -0.36920595}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftLeg
+      parentName: YetiCharacter_Guides
+      position: {x: -0.5587833, y: 1.2562785, z: 0.18629313}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftShoulder
+      parentName: YetiCharacter_Guides
+      position: {x: -1.1190115, y: 6.5252123, z: 0.26992637}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftToeBase
+      parentName: YetiCharacter_Guides
+      position: {x: -0.8485902, y: 0.29672417, z: 1.3536905}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftUpLeg
+      parentName: YetiCharacter_Guides
+      position: {x: -0.53485626, y: 2.396357, z: 0.24615915}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Neck
+      parentName: YetiCharacter_Guides
+      position: {x: -0, y: 7.0331635, z: 0.1779173}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Reference
+      parentName: YetiCharacter_Guides
+      position: {x: -0, y: 0, z: 0.6491635}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightArm
+      parentName: YetiCharacter_Guides
+      position: {x: 2.0500782, y: 5.8895845, z: -0.4618508}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightFoot
+      parentName: YetiCharacter_Guides
+      position: {x: 0.57550865, y: 0.6895096, z: 0.15691282}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightForeArm
+      parentName: YetiCharacter_Guides
+      position: {x: 5.2753167, y: 5.7314563, z: -0.41730517}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightHand
+      parentName: YetiCharacter_Guides
+      position: {x: 7.9602914, y: 5.719287, z: -0.36920595}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightLeg
+      parentName: YetiCharacter_Guides
+      position: {x: 0.5587833, y: 1.2562785, z: 0.18629313}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightShoulder
+      parentName: YetiCharacter_Guides
+      position: {x: 1.1190115, y: 6.5252123, z: 0.26992637}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightToeBase
+      parentName: YetiCharacter_Guides
+      position: {x: 0.8485902, y: 0.29672417, z: 1.3536905}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightUpLeg
+      parentName: YetiCharacter_Guides
+      position: {x: 0.53485626, y: 2.396357, z: 0.24615915}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spine
+      parentName: YetiCharacter_Guides
+      position: {x: -0, y: 3.2642183, z: -0.016099492}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spine1
+      parentName: YetiCharacter_Guides
+      position: {x: -0, y: 4.6345315, z: -0.122126125}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spine2
+      parentName: YetiCharacter_Guides
+      position: {x: -0, y: 6.2667413, z: -0.48944104}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Reference
+      parentName: Yeti_Animation(Clone)
+      position: {x: -0, y: 0, z: 0.6491635}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Hips
+      parentName: YetiCharacter_Reference
+      position: {x: 1.7739351e-18, y: 2.3368807, z: -0.39501524}
+      rotation: {x: 0.39946038, y: -0.583465, z: -0.39946038, w: 0.583465}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_LeftUpLeg
+      parentName: YetiCharacter_Hips
+      position: {x: 0.15685244, y: -0.06942799, z: 0.53485626}
+      rotation: {x: 0, y: 0, z: 0.9829254, w: 0.1840046}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_LeftLeg
+      parentName: YetiCharacter_LeftUpLeg
+      position: {x: -1.1419001, y: 5.828671e-16, z: 1.110223e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_LeftFoot
+      parentName: YetiCharacter_LeftLeg
+      position: {x: -0.56777626, y: 2.4980018e-16, z: 1.110223e-16}
+      rotation: {x: -0.00000018264234, y: 0.0000002502061, z: 0.5895944, w: 0.8076995}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_LeftToeBase
+      parentName: YetiCharacter_LeftFoot
+      position: {x: -1.2888488, y: -0.0000000799123, z: -0.00000002364905}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_RightUpLeg
+      parentName: YetiCharacter_Hips
+      position: {x: 0.15685244, y: -0.06942799, z: -0.53485626}
+      rotation: {x: 0.0000000055677214, y: 0.000000029742743, z: -0.18399985, w: 0.9829263}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_RightLeg
+      parentName: YetiCharacter_RightUpLeg
+      position: {x: 1.1419001, y: -0.000000009633427, z: 0.00000006910638}
+      rotation: {x: -2.0322612e-13, y: -0.00000004154904, z: -0.000004891235, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_RightFoot
+      parentName: YetiCharacter_RightLeg
+      position: {x: 0.56777626, y: 0.000000014901161, z: -0.00000007242465}
+      rotation: {x: -0.000023517267, y: 0.000032235104, z: 0.5895944, w: 0.8076995}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_RightToeBase
+      parentName: YetiCharacter_RightFoot
+      position: {x: 1.2888486, y: -0.000000010736647, z: 0.00000002819089}
+      rotation: {x: 0.000025413932, y: 0.000000016143142, z: -4.1026072e-13, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Spine
+      parentName: YetiCharacter_Hips
+      position: {x: -0.7471069, y: 0.000000016571354, z: -1.0588401e-16}
+      rotation: {x: 0, y: -0, z: -0.14592612, w: 0.98929554}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Spine1
+      parentName: YetiCharacter_Spine
+      position: {x: -1.3744088, y: -0.000000004534242, z: -4.3664326e-16}
+      rotation: {x: 0, y: 0, z: 0.07200453, w: 0.99740434}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Spine2
+      parentName: YetiCharacter_Spine1
+      position: {x: -1.6730299, y: -0.000000010082917, z: -6.0695194e-16}
+      rotation: {x: -0, y: -0, z: -0.3471834, w: 0.9377973}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_LeftShoulder
+      parentName: YetiCharacter_Spine2
+      position: {x: -0.69359505, y: 0.40295413, z: 1.1190115}
+      rotation: {x: -0.5058894, y: 0.3864326, z: 0.7079222, w: 0.30592808}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_LeftArm
+      parentName: YetiCharacter_LeftShoulder
+      position: {x: -1.3440259, y: -0.00000012776066, z: 0.00000009350237}
+      rotation: {x: 0.62881947, y: -0.0038675652, z: -0.18429981, w: 0.7553838}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_LeftForeArm
+      parentName: YetiCharacter_LeftArm
+      position: {x: -3.2294195, y: -0.00000032782555, z: -0.00000047683716}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_LeftHand
+      parentName: YetiCharacter_LeftForeArm
+      position: {x: -2.6854334, y: 0.00000029802322, z: 2.6645353e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_RightShoulder
+      parentName: YetiCharacter_Spine2
+      position: {x: -0.69359505, y: 0.40295413, z: -1.1190115}
+      rotation: {x: 0.38643268, y: 0.5058894, z: -0.3059281, w: 0.70792204}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_RightArm
+      parentName: YetiCharacter_RightShoulder
+      position: {x: 1.3440259, y: 0.00000012776066, z: -0.00000009350237}
+      rotation: {x: 0.62881947, y: -0.0038676779, z: -0.18429957, w: 0.75538385}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_RightForeArm
+      parentName: YetiCharacter_RightArm
+      position: {x: 3.2294195, y: -0.00000017881393, z: -0.00000047683716}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_RightHand
+      parentName: YetiCharacter_RightForeArm
+      position: {x: 2.6854334, y: -0.0000003874302, z: 0.00000013076618}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Neck
+      parentName: YetiCharacter_Spine2
+      position: {x: -1.016253, y: 0.00000009070146, z: -2.2009377e-16}
+      rotation: {x: -0, y: -0, z: 0.11023545, w: 0.99390554}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YetiCharacter_Head
+      parentName: YetiCharacter_Neck
+      position: {x: -1.9976944, y: -0.000000109192335, z: -5.0054957e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

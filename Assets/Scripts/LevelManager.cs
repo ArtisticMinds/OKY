@@ -46,9 +46,12 @@ public class LevelManager : MonoBehaviour {
     public int FixedDetailObjectDistance;
     public int ShadowDistanceOverride;
     public bool StartUseHidden = false;
+    [Space(10)]
     public float AddCadutaMultipler;
     public int AddAltitude=1 ;
-    
+    public int AddRemovePointsAtEnd = 0;
+    public float AddRemoveGravity = 0;
+
 
     void Awake()
     {

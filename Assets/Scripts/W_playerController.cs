@@ -508,7 +508,7 @@ public class W_playerController : MonoBehaviour
         {
             
         // apply extra gravity from multiplier:
-        Vector3 extraGravityForce = (Physics.gravity * m_GravityMultiplier) - Physics.gravity;
+        Vector3 extraGravityForce = ((Physics.gravity * (m_GravityMultiplier+GameManager.ThisLevelManager.AddRemoveGravity)) - Physics.gravity);
         Vector3 v = (transform.forward * m_HorizontalJump *  (m_ForwardAmount));
         m_Rigidbody.AddForce(extraGravityForce+(v));
 
@@ -806,7 +806,7 @@ public class W_playerController : MonoBehaviour
                 m_JumpPower  += col.transform.GetComponent<Shoes3DItem>().AddValue;
                 PlayerAudioSource.PlayOneShot(col.transform.GetComponent<Shoes3DItem>().sound);
                 col.transform.GetComponent<Shoes3DItem>().Delete();
-                m_JumpPower = Mathf.Clamp(m_JumpPower, 0, 20);
+                m_JumpPower = Mathf.Clamp(m_JumpPower, 0, 16);
                 GameUI.Instance.JumpItem.SetActive(true);
                 GameManager.m_Character.SuperJumpEffect.SetActive(true);
                 JumpItem.timer = col.transform.GetComponent<Shoes3DItem>().TimeDuration;
@@ -1006,12 +1006,16 @@ public class W_playerController : MonoBehaviour
     }
 
     Material[] OldMaterials;
+
+ 
+
+
     IEnumerator Invulnerability()
     {
         IsInvulnerabile = true;
 
         //Crea l'array dei vecchi materiali
-        OldMaterials=new Material[ObjectToLamp.Length];
+        OldMaterials = new Material[ObjectToLamp.Length];
 
         for (int i = 0; i < ObjectToLamp.Length; i++)
         {

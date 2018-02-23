@@ -8031,10 +8031,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10e6df8529d5c914dbaa90b847cd0f8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ITA_Text: "Grazie per aver testato OKY!\nLo sviluppo e' tutt'ora in corso.\n\nQuesto
-    era solo un breve test. \r\nMolte caratteristiche sono tutt'ora da implementare.\n\nPer
-    Informazioni, consigli (o se vuoi avere Oky \ntradotto anche nella tua lingua)
-    puoi contattarmi\nall'indirizzo:\n\n<color=#>wilez@artistic-minds.it</color>\n\nGrazie
+  ITA_Text: "Grazie per aver testato OKY!\nLo sviluppo e' tutt'ora in corso.\n\nMolte
+    caratteristiche sono tutt'ora da implementare.\n\nPer Informazioni, consigli (o
+    se vuoi avere Oky \ntradotto anche nella tua lingua) puoi contattarmi\nall'indirizzo:\n\n<color=#>wilez@artistic-minds.it</color>\n\nGrazie
     del tuo supporto!! ;)"
   ENG_Text: "Thank you for testing this version of game!\nThe development is still
     in progress.\r\n\nFor information, tips, feedbacks (or if you want\n to have Oky
@@ -8660,7 +8659,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1860354331568694}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00c990cb2df48654082a7424f87dd8f5, type: 3}
   m_Name: 
@@ -10004,8 +10003,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0626b924325d1c34cafa6b22297f4e4f, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: e4f1fee3de32377429fd1348fae62b10, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -14656,10 +14655,9 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "Thank you for testing this version of game!\nThe development is still in
-    progress.\r\nThis was just a short test.\r\nMany features are still in development.\n\nFor
-    information, tips, feedbacks (or if you want\n to have Oky in your language) you
-    can contact me at:\r\n\n<color=#>wilez@artistic-minds.it</color>\n\nthanks for
-    your support!! ;)"
+    progress.\r\n\nFor information, tips, feedbacks (or if you want\n to have Oky
+    in your language) you can contact me at:\r\n\n<color=#>wilez@artistic-minds.it</color>\n\nthanks
+    for your support!! ;)"
 --- !u!114 &114923836267849630
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16948,7 +16946,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1625979477741824}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 243.9, y: 144.6, z: 0}
+  m_LocalPosition: {x: 250.3, y: 144.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224539911343619286}
@@ -16959,7 +16957,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 143.9, y: 104.6}
+  m_AnchoredPosition: {x: 150.3, y: 104.6}
   m_SizeDelta: {x: 64, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224067019105952186
@@ -17665,7 +17663,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1655250651804714}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -62.856247, y: 102.4, z: 0}
+  m_LocalPosition: {x: -62.856247, y: 205.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224599580338591770}
@@ -17674,7 +17672,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.78, y: 0.01}
   m_AnchorMax: {x: 0.99, y: 0.15}
-  m_AnchoredPosition: {x: 29.14375, y: -0}
+  m_AnchoredPosition: {x: 29.14375, y: 102.7}
   m_SizeDelta: {x: -21.712502, y: -48.975}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224213260255641446
@@ -18331,7 +18329,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1259327220856214}
   m_LocalRotation: {x: 0.18566658, y: 0, z: 0, w: 0.98261285}
-  m_LocalPosition: {x: -7.799988, y: -270, z: 0}
+  m_LocalPosition: {x: -7.799988, y: -267.05, z: 0}
   m_LocalScale: {x: 0.35, y: 0.31, z: -6.59}
   m_Children: []
   m_Father: {fileID: 224644040981259718}
@@ -18339,8 +18337,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 21.4, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7.799997, y: -270}
-  m_SizeDelta: {x: 875.6, y: 620}
+  m_AnchoredPosition: {x: -7.799997, y: -267.05}
+  m_SizeDelta: {x: 875.6, y: 47.300064}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224372373833468050
 RectTransform:
@@ -19077,7 +19075,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1762381951070854}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -57.30005, y: -39.1, z: 0}
+  m_LocalPosition: {x: -57.30005, y: -2.1999512, z: 0}
   m_LocalScale: {x: 0.28554058, y: 0.28554052, z: 2.3795044}
   m_Children:
   - {fileID: 224774861978810100}
@@ -19088,7 +19086,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -57.30005, y: -39.1}
+  m_AnchoredPosition: {x: -57.30005, y: -2.1999512}
   m_SizeDelta: {x: 2048, y: 1024}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!224 &224535606430351098
@@ -19626,8 +19624,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1247231926318828}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13, y: -54, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalPosition: {x: 13, y: 94, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 224364623325564430}
   - {fileID: 224386022809831278}
@@ -19636,7 +19634,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13, y: -54}
+  m_AnchoredPosition: {x: 13, y: 94}
   m_SizeDelta: {x: 800, y: 567}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224644415216571490
@@ -19704,7 +19702,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1022091358168462}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -63.100006, y: 214.20001, z: 0}
+  m_LocalPosition: {x: -63.100006, y: 100.399994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224527951197075460}
@@ -19713,7 +19711,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.78, y: 0.01}
   m_AnchorMax: {x: 0.99, y: 0.15}
-  m_AnchoredPosition: {x: 28.9, y: 111.8}
+  m_AnchoredPosition: {x: 28.9, y: -2}
   m_SizeDelta: {x: -50, y: -42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224672762732683506
@@ -20218,7 +20216,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1431802554599264}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.000061035156, y: 1.2999992, z: 0}
+  m_LocalPosition: {x: -0.000061035156, y: -435.20004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224067393958135182}
@@ -20226,7 +20224,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000061035156, y: 1.3}
+  m_AnchoredPosition: {x: -0.000061035156, y: -435.20004}
   m_SizeDelta: {x: 121, y: 104}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224767928977144432
@@ -20970,7 +20968,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1228501801781264}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 504, y: -58, z: 0}
+  m_LocalPosition: {x: 519.5, y: -58, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224741735987836936}
@@ -20983,7 +20981,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -296, y: 582}
+  m_AnchoredPosition: {x: -280.5, y: 582}
   m_SizeDelta: {x: 164, y: 80}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!224 &224926823759846812
@@ -21810,7 +21808,7 @@ CanvasGroup:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1860354331568694}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0

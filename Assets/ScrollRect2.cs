@@ -64,6 +64,13 @@ namespace UnityEngine.UI
         private RectTransform m_Viewport;
         public RectTransform viewport { get { return m_Viewport; } set { m_Viewport = value; SetDirtyCaching(); } }
 
+        /// <summary>
+        /// Aggiunta allo script originale
+        /// </summary>
+        [SerializeField]
+        private float m_ScrollFactor = 1.0f;
+        public float scrollFactor { get { return m_ScrollFactor; } set { m_ScrollFactor = value; } }
+
         [SerializeField]
         private Scrollbar m_HorizontalScrollbar;
         public Scrollbar horizontalScrollbar
@@ -344,8 +351,11 @@ namespace UnityEngine.UI
 
             UpdateBounds();
 
+
             var pointerDelta = localCursor - m_PointerStartLocalCursor;
+            pointerDelta *= m_ScrollFactor;    // Questa linea è nuova!
             Vector2 position = m_ContentStartPosition + pointerDelta;
+
 
             // Offset to get content into place in the view.
             Vector2 offset = CalculateOffset(position - m_Content.anchoredPosition);

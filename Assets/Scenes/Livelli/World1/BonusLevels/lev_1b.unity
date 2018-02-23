@@ -648,6 +648,7 @@ MonoBehaviour:
   ActiveOnEnemy: 1
   ActiveOnPlayer: 1
   FiredBy: {fileID: 0}
+  FiredByA: {fileID: 0}
 --- !u!1 &129683326
 GameObject:
   m_ObjectHideFlags: 0
@@ -747,7 +748,7 @@ Transform:
   m_LocalScale: {x: 41.85518, y: 18.617428, z: 19.920849}
   m_Children: []
   m_Father: {fileID: 257664068}
-  m_RootOrder: 16
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: -270, y: -180, z: 3.0119934}
 --- !u!1001 &150671847
 Prefab:
@@ -1524,13 +1525,13 @@ Transform:
   - {fileID: 1471260781}
   - {fileID: 1413230249}
   - {fileID: 307139431}
+  - {fileID: 137712394}
   - {fileID: 1022882578}
   - {fileID: 1881958700}
   - {fileID: 1973300506}
   - {fileID: 1809123021}
   - {fileID: 1132408712}
   - {fileID: 1241986712}
-  - {fileID: 137712394}
   - {fileID: 61177674}
   - {fileID: 1224622673}
   - {fileID: 1465811386}
@@ -5909,12 +5910,12 @@ Prefab:
     - target: {fileID: 224680175120894806, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 100
+      value: 640
       objectReference: {fileID: 0}
     - target: {fileID: 224680175120894806, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 62.5
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 224680175120894806, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
@@ -5999,17 +6000,17 @@ Prefab:
     - target: {fileID: 224660042059992362, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 580.00006
+      value: 580
       objectReference: {fileID: 0}
     - target: {fileID: 224660042059992362, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -380.00003
+      value: -380
       objectReference: {fileID: 0}
     - target: {fileID: 224114019147718222, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -640.00006
+      value: -640
       objectReference: {fileID: 0}
     - target: {fileID: 224114019147718222, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
@@ -6019,17 +6020,17 @@ Prefab:
     - target: {fileID: 224474219603777782, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -580.00006
+      value: -580
       objectReference: {fileID: 0}
     - target: {fileID: 224474219603777782, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -380.00003
+      value: -380
       objectReference: {fileID: 0}
     - target: {fileID: 224876323699544886, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 640.00006
+      value: 640
       objectReference: {fileID: 0}
     - target: {fileID: 224876323699544886, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
@@ -14381,7 +14382,7 @@ MonoBehaviour:
   Word: 0
   SceneTime: 46
   StarNeeded: 20
-  WinGemAtEnd: 5
+  WinGemAtEnd: 2
   HiddenStarsInScene: 0
   LevelNumber: 1000
   terrain: {fileID: 0}
@@ -14412,6 +14413,9 @@ MonoBehaviour:
   ShadowDistanceOverride: 0
   StartUseHidden: 0
   AddCadutaMultipler: 0
+  AddAltitude: 1
+  AddRemovePointsAtEnd: 0
+  AddRemoveGravity: 0
 --- !u!1001 &607858211
 Prefab:
   m_ObjectHideFlags: 0
@@ -49602,6 +49606,14 @@ Prefab:
     - target: {fileID: 100002, guid: 02bf3c333107b3145bbf3ae84bf2f3b0, type: 2}
       propertyPath: m_Name
       value: FoglieEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: 02bf3c333107b3145bbf3ae84bf2f3b0, type: 2}
+      propertyPath: InitialModule.startRotationX.scalar
+      value: 0.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: 02bf3c333107b3145bbf3ae84bf2f3b0, type: 2}
+      propertyPath: InitialModule.startRotationY.scalar
+      value: 0.0000
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: 02bf3c333107b3145bbf3ae84bf2f3b0, type: 2}
       propertyPath: InitialModule.startRotationX.scalar

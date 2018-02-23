@@ -125,7 +125,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.3.49
+  bundleVersion: 1.3.59
   preloadedAssets: []
   metroInputSource: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -157,7 +157,7 @@ PlayerSettings:
     tvOS: com.ArtisticMinds.OKY
   buildNumber:
     iOS: 0
-  AndroidBundleVersionCode: 13049
+  AndroidBundleVersionCode: 13059
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 2

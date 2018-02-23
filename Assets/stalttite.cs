@@ -15,10 +15,18 @@ public class stalttite : MonoBehaviour {
     public AudioClip EmitOnAction;
 
 
+    public bool DestroyOnHit = true;
+    bool moveStep01, moveStep02;
+    float addY;
+    Vector3 OrPOsition;
+    Transform OrParent;
+
     void Awake () {
         _rigidbody = GetComponent<Rigidbody>();
         _rigidbody.isKinematic = true;
-        DestroyEffect.SetActive(false);
+       if(DestroyOnHit) DestroyEffect.SetActive(false);
+        OrPOsition = transform.position;
+        OrParent = transform.parent;
     }
 
    public void Detack() {
@@ -37,9 +45,59 @@ public class stalttite : MonoBehaviour {
 
     }
 
+    public void MoveStep(int ran) {
+
+        if (Random.Range(0, ran) >= 1)
+            return;
+
+        if (!moveStep01)
+        {
+            moveStep01 = true;
+            return;
+        }
+
+
+        if (moveStep01 && !moveStep02)
+        {
+            moveStep02 = true;
+            return;
+        }
+
+
+        if (moveStep01 && moveStep02)
+        {
+            Detack();
+            return;
+        }
+
+    }
 
     void Update()
     {
+        if (!DestroyOnHit)
+            if (transform.position.y < -10) DestroyObject();
+
+        if (Active)
+        {
+            if (moveStep01)
+            {
+                if (addY < 10)
+                {
+                    addY += 3f * Time.deltaTime;
+                    transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.down * addY, Time.deltaTime);
+                }
+            }
+
+            if (moveStep02)
+            {
+                if (addY < 5)
+                {
+                    addY += 3f * Time.deltaTime;
+                    transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.down * addY, Time.deltaTime);
+                }
+            }
+        }
+
         if (!Active) return;
 
         TimeFromCreation += Time.deltaTime * GameManager.TimeMultipler;
@@ -57,9 +115,6 @@ public class stalttite : MonoBehaviour {
             grav = 0;
         }
 
-
-        //if (Speed <= 0.1f)
-        //    DestroyObject();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -73,12 +128,31 @@ public class stalttite : MonoBehaviour {
     private void DestroyObject()
     {
 
-        if (DestroyEffect)
+
+        if (DestroyOnHit)
         {
-            DestroyEffect.gameObject.SetActive(true);
-            DestroyEffect.transform.SetParent(null);
+            if (DestroyEffect)
+            {
+                DestroyEffect.gameObject.SetActive(true);
+                DestroyEffect.transform.SetParent(null);
+            }
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
+        else
+        {
+            GameObject dest = GameObject.Instantiate(DestroyEffect.gameObject, null);
+            dest.transform.position = transform.position;
+
+            transform.SetParent(OrParent);
+            transform.position = OrPOsition;
+            Active = false;
+            _rigidbody.isKinematic = true;
+            grav = 0;
+            moveStep01 = moveStep02 = false;
+            TimeFromCreation = 0;
+        }
 
     }
+
+
 }

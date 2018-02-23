@@ -3691,6 +3691,8 @@ MonoBehaviour:
   ActivationSound: {fileID: 8300000, guid: 7d5a12c2f9597014eae2b78e03bc11cc, type: 3}
   DeactivateGameObject: {fileID: 0}
   DeactivateAudioSource: {fileID: 0}
+  ChangeAnimationSpeed: 0
+  NewSpeed: 2
 --- !u!95 &30419470
 Animator:
   serializedVersion: 3
@@ -7933,6 +7935,8 @@ MonoBehaviour:
   ActivationSound: {fileID: 8300000, guid: 7d5a12c2f9597014eae2b78e03bc11cc, type: 3}
   DeactivateGameObject: {fileID: 1779606874}
   DeactivateAudioSource: {fileID: 747048601}
+  ChangeAnimationSpeed: 0
+  NewSpeed: 2
 --- !u!95 &108045400
 Animator:
   serializedVersion: 3
@@ -16799,12 +16803,12 @@ Prefab:
     - target: {fileID: 224680175120894806, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 236
+      value: 640
       objectReference: {fileID: 0}
     - target: {fileID: 224680175120894806, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 147.5
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 224680175120894806, guid: 3cb24c4bed3b49c4ca0514c2946aa292,
         type: 2}
@@ -26008,6 +26012,9 @@ MonoBehaviour:
   ShadowDistanceOverride: 40
   StartUseHidden: 0
   AddCadutaMultipler: -0.3
+  AddAltitude: 1
+  AddRemovePointsAtEnd: 0
+  AddRemoveGravity: 0
 --- !u!1001 &609153254
 Prefab:
   m_ObjectHideFlags: 0
@@ -56959,7 +56966,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243096318778725606, guid: 9bed56d8ab617a24d8bbf7adcebf3135,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: bd2c5f78057b61346ad432fc0c89663a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 05099a265964e434c9b3a3e62c1edb24, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -64848,6 +64855,7 @@ MonoBehaviour:
   ActiveOnEnemy: 1
   ActiveOnPlayer: 1
   FiredBy: {fileID: 0}
+  FiredByA: {fileID: 0}
 --- !u!1001 &1436548232
 Prefab:
   m_ObjectHideFlags: 0
@@ -87963,6 +87971,8 @@ MonoBehaviour:
   ActivationSound: {fileID: 8300000, guid: 7d5a12c2f9597014eae2b78e03bc11cc, type: 3}
   DeactivateGameObject: {fileID: 1098659129}
   DeactivateAudioSource: {fileID: 1536030986}
+  ChangeAnimationSpeed: 0
+  NewSpeed: 2
 --- !u!95 &1785269105
 Animator:
   serializedVersion: 3

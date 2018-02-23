@@ -45,7 +45,7 @@ public class PinchZoom : MonoBehaviour
             ZoomState -= (deltaMagnitudeDiff *Time.unscaledDeltaTime)*zoomSpeed;
 
             // Make sure the canvas size never drops below 0.1
-            ZoomState = Mathf.Clamp(ZoomState, 1f,1.5f);
+            ZoomState = Mathf.Clamp(ZoomState, 1f,2f);
             rectTransform.localScale = Vector3.one * ZoomState;
         }
         else

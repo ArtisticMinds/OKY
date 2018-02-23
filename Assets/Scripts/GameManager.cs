@@ -669,22 +669,22 @@ public class GameManager : MonoBehaviour {
         MainMenu.AreYourSureDialog.SetActive(false);
 
 
-        //Per ogni World e livello
-        foreach (WorldLevelsPanel allLevelsPanel in MainMenu.Instance.allLevelsPanels)
-        {
-            //Resetto i livelli a schermo
-            allLevelsPanel.Reset();
+        ////Per ogni World e livello
+        //foreach (WorldLevelsPanel allLevelsPanel in MainMenu.Instance.allLevelsPanels)
+        //{
+        //    //Resetto i livelli a schermo
+        //    allLevelsPanel.Reset();
 
-            ////Cancella tutti i dati LevN_
-            int n = 0;
-            foreach (string leveles in allLevelsPanel.scenes)
-            {
-                n++;
-                PlayerPrefs.DeleteKey(GameManager.Instance.AppName + "LevN_" + n);
-            }
+        //    ////Cancella tutti i dati LevN_
+        //    int n = 0;
+        //    foreach (string leveles in allLevelsPanel.scenes)
+        //    {
+        //        n++;
+        //        PlayerPrefs.DeleteKey(GameManager.Instance.AppName + "LevN_" + n);
+        //    }
 
 
-        }
+        //}
 
     }
 
@@ -746,6 +746,7 @@ public class GameManager : MonoBehaviour {
     public void ReSpawnOky() {
 
         if (!m_Character.CheckResumePossibility()) return;
+        GameManager.m_Character.ResetOriginalMaterials();
 
         PlayerIsDead = Lose = false; //Resucita
         Respawn = true;
@@ -846,7 +847,7 @@ public class GameManager : MonoBehaviour {
         if (quality == Quality.Med) { FPSCounter.multipler = 1.9f; Time.fixedDeltaTime = 0.02f; }
 
 
-        if (FrameRate < 35 && OldFrameRate < 35)
+        if (FrameRate < 40 && OldFrameRate < 40)
         {
             LowFrameRate = true;
             GameUI.Instance._autoSettingUI.SetActive(true);//Visualizza la UI
@@ -857,7 +858,7 @@ public class GameManager : MonoBehaviour {
         {        
             LowFrameRate = false;
             GameUI.Instance._autoSettingUI.SetActive(false);//Visualizza la UI 
-            if (FrameRate >= 35 && OldFrameRate >= 35)
+            if (FrameRate >= 40 && OldFrameRate >= 40)
             {
                 disableLowFrameRateCheck = true;
                 CancelInvoke("CheckLowFrameRate");
