@@ -7,7 +7,7 @@ using UnityEngine.UI;
     {
 
         private Text m_Text;
-        float mis_period = 5;
+        float mis_period = 7;
         public static int OldFrameRate;
         public static int m_CurrentFps;
         private float myTimer;

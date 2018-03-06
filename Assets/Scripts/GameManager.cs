@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,6 +11,7 @@ using UnityEngine.SocialPlatforms;
 public class GameManager : MonoBehaviour {
 
     public string AppName = "Oky";
+    public static float Diffic = 0.3f;
     public int NewUserGems = 10;
     public GameObject _buildVersion;
     public bool debugMode = false;
@@ -91,6 +93,7 @@ public class GameManager : MonoBehaviour {
     public bool UseAutoQuality;
     GameObject _PlayerStartPoint;
 
+  
 
     void Awake() {
         transform.SetParent(null);
@@ -125,6 +128,7 @@ public class GameManager : MonoBehaviour {
         MasterAudioSource.priority = 256;
         ReadLanguage();
 
+     
 
         //Questo awake viene eseguito solo all'inizio e se non si tratta del livello menu
         //vuol dire che è stato caricato un livello senza menu
@@ -191,7 +195,6 @@ public class GameManager : MonoBehaviour {
 
 
 
-
     void CheckSoundListening()
     {
         if (FindObjectOfType<AudioListener>()) return; //Se  c'è un AudioListener in scena non fare nulla
@@ -228,7 +231,7 @@ public class GameManager : MonoBehaviour {
             OnLoadMenu();
 
             if (UseAutoQuality)
-                InvokeRepeating("CheckLowFrameRate", 5, 5);
+                InvokeRepeating("CheckLowFrameRate", 5, 3);
             else
                 CancelInvoke("CheckLowFrameRate");
 
@@ -471,7 +474,7 @@ public class GameManager : MonoBehaviour {
             if (MusicVol_Slider) MusicVol_Slider.value = 10f;
             if (SoundsVol_Slider) SoundsVol_Slider.value = 10f;
             CameraDistance = 22.5f;
-            UseAutoQuality = true;
+            UseAutoQuality = false;
             quality = Quality.Med;
             GetUIScale.UIAlpha = 1f;
             MainMenu.Instance._QualityDropDown.value = 1;
@@ -545,6 +548,7 @@ public class GameManager : MonoBehaviour {
         {
             Resources.UnloadUnusedAssets();
             System.GC.Collect();
+            gameUI.ReloadingSceneUI.SetActive(true);
             print("LoadingNextScene: " + ThisLevelManager.NextSceneName);
             SceneManager.LoadScene(ThisLevelManager.NextSceneName);
         }
@@ -562,7 +566,7 @@ public class GameManager : MonoBehaviour {
     {
         Resources.UnloadUnusedAssets();
         System.GC.Collect();
-
+        gameUI.ReloadingSceneUI.SetActive(true);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Instance.SetGameState(GameManager.Game_State.Running);
 
@@ -636,7 +640,7 @@ public class GameManager : MonoBehaviour {
     public static void ResetAll()
     {
         GameManager.Instance.PrimoAvvio = false;
-        PlayerPrefs.DeleteAll();//Cancella tutto il PlayerPrefs
+
         SocialConnection.DeleteUserFormDatabase();
 
         //Cancella tutti i dati del setting
@@ -649,7 +653,7 @@ public class GameManager : MonoBehaviour {
         PlayerPrefs.DeleteKey(GameManager.Instance.AppName + "_AllLevelsOpen");
 
 
-            for (int i = 0; i < 100; i++)
+        for (int i = 0; i < 100; i++)
         {
             PlayerPrefs.DeleteKey(GameManager.Instance.AppName + "_GemsIDGeted_" + i);
         }
@@ -669,31 +673,22 @@ public class GameManager : MonoBehaviour {
         MainMenu.AreYourSureDialog.SetActive(false);
 
 
-        ////Per ogni World e livello
-        //foreach (WorldLevelsPanel allLevelsPanel in MainMenu.Instance.allLevelsPanels)
-        //{
-        //    //Resetto i livelli a schermo
-        //    allLevelsPanel.Reset();
+        //Per ogni livello
+        foreach (W_SceneItem allLevels in MainMenu.Instance.AllLevels)
+        {
 
-        //    ////Cancella tutti i dati LevN_
-        //    int n = 0;
-        //    foreach (string leveles in allLevelsPanel.scenes)
-        //    {
-        //        n++;
-        //        PlayerPrefs.DeleteKey(GameManager.Instance.AppName + "LevN_" + n);
-        //    }
+            ////Cancella tutti i dati LevN_
+            PlayerPrefs.DeleteKey(GameManager.Instance.AppName + "LevN_" + allLevels.LevelNumber);
+
+        }
 
 
-        //}
-
+        PlayerPrefs.DeleteAll();//Cancella tutto il PlayerPrefsù
     }
 
 
 
-
-
-
-    public static void QuitGame()
+        public static void QuitGame()
     {
         SocialConnection.instance.OnLogOut();
         print("QUIT GAME");
@@ -830,8 +825,11 @@ public class GameManager : MonoBehaviour {
         if (disableLowFrameRateCheck) return;
         if (!UseAutoQuality) return;
         if (Time.timeSinceLevelLoad < 2) return;
-        if (Time.timeSinceLevelLoad > 20) return;
-
+        if (Time.timeSinceLevelLoad > 25)
+        {
+            CancelInvoke("CheckLowFrameRate");
+            return;
+        }
 
         if (QualitySettings.GetQualityLevel() <= 0) return;
 
@@ -847,7 +845,7 @@ public class GameManager : MonoBehaviour {
         if (quality == Quality.Med) { FPSCounter.multipler = 1.9f; Time.fixedDeltaTime = 0.02f; }
 
 
-        if (FrameRate < 40 && OldFrameRate < 40)
+        if (FrameRate < 25 && OldFrameRate < 30)
         {
             LowFrameRate = true;
             GameUI.Instance._autoSettingUI.SetActive(true);//Visualizza la UI
@@ -858,7 +856,7 @@ public class GameManager : MonoBehaviour {
         {        
             LowFrameRate = false;
             GameUI.Instance._autoSettingUI.SetActive(false);//Visualizza la UI 
-            if (FrameRate >= 40 && OldFrameRate >= 40)
+            if (FrameRate >= 25 && OldFrameRate >= 30)
             {
                 disableLowFrameRateCheck = true;
                 CancelInvoke("CheckLowFrameRate");

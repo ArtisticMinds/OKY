@@ -30,9 +30,10 @@ public class W_EndLevel : MonoBehaviour {
         if (StartOpen) OpenPortalEffect();
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider col)
     {
-        BlinkUseButton.DeActive();
+        if (col.gameObject.tag.Equals("Player"))
+            BlinkUseButton.DeActive();
     }
 
 
@@ -91,9 +92,35 @@ public class W_EndLevel : MonoBehaviour {
         //Calcola i punti fatti in questo livello aggiungendo anche il tempo rimasto 
         W_PlayerPoints._istance.LevelComplete();
 
-      
+        //Salvo il numero del livello su dataBase
+        if (Social.localUser.authenticated && Application.internetReachability != NetworkReachability.NotReachable)
+            StartCoroutine(SendLastLevel());
     }
 
 
+    // Salva l'ultimo livello giocato sul database
+    IEnumerator SendLastLevel()
+    {
+      
 
+
+            string post_url = "artistic-minds.it/OKY/SetLastLevel.php?" + "&accesskey=" + SocialConnection.AccessKey + "&UserID="+  SocialConnection.UserID + "&LastLevel=" + PlayerPrefs.GetInt(GameManager.Instance.AppName + "_LastLevel") + "&getdata=setLastLevel" ;
+            
+            // Post the URL to the site and create a download object to get the result.
+            WWW hs_post = new WWW("http://" + post_url);
+            yield return hs_post; // Wait until the download is done
+
+
+            if (hs_post.error != null)
+            {
+                print("There was an error posting the Last Level: " + hs_post.error);
+            }
+            else
+            {
+                print("LASTLEVEL: " + post_url);
+            }
+
+        
+
+    }
 }

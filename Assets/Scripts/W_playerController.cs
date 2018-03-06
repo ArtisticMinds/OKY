@@ -962,7 +962,7 @@ public class W_playerController : MonoBehaviour
 
 
     public void RemovePlayerEnergy(float quant) {
-        PlayerEnergy -= quant;
+        PlayerEnergy -= quant*GameManager.Diffic;
         W_PlayerPoints._istance.RemovePoints(10);
         StartCoroutine(Invulnerability());
     }

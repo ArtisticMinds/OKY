@@ -91,6 +91,12 @@ public class LevelManager : MonoBehaviour {
    
     void Start()
     {
+
+        //Se il numero del livello appena iniziato è maggiore del numero del livello salvato  
+        if (PlayerPrefs.GetInt(GameManager.Instance.AppName + "_LastLevel") < int.Parse(LevelNumber))
+            PlayerPrefs.SetInt(GameManager.Instance.AppName + "_LastLevel", int.Parse(LevelNumber));
+
+
         System.GC.Collect();
         if (UseIntro)
         {

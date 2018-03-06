@@ -30,6 +30,7 @@ public enum Scenes
 	lev_20 = 25,
 	lev_21 = 26,
 	lev_22 = 27,
-	lev_23 = 28
+	lev_23 = 28,
+	lev_24 = 29
 }
 

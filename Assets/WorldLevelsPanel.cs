@@ -9,11 +9,15 @@ public class WorldLevelsPanel : MonoBehaviour
 {
 
  
-   // public SceneField[] scenes;
+    public W_SceneItem[] AllLevels;
 
    // public GameObject PannelloLivelli;
     public GameObject Loading;
 
+    private void Awake()
+    {
+        AllLevels = FindObjectsOfType<W_SceneItem>();
+    }
 
     public static bool AllLevelsOpen;//Solo per me
 
@@ -37,21 +41,11 @@ public class WorldLevelsPanel : MonoBehaviour
     public void Reset()
     {
 
-
-
         Loading.SetActive(false);
 
-        //if (PannelloLivelli.transform.childCount > 0)//Se c'è almeno un children
-        //    foreach (Transform item in PannelloLivelli.transform.GetComponentInChildren<Transform>())
-        //        Destroy(item.gameObject);//Cancella le icone dei livelli
-
-
     }
 
 
-    void LateUpdate()
-    {
 
-    }
 
 }

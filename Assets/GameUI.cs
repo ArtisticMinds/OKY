@@ -33,6 +33,7 @@ public class GameUI : MonoBehaviour {
     public Text LevelNameOnUI;
     public GameObject UseButton;
     public GameObject SmartKillUI;
+    public GameObject ReloadingSceneUI;
 
 
     void Awake () {
@@ -56,7 +57,7 @@ public class GameUI : MonoBehaviour {
         JumpItem.SetActive(false);
         FireShotItem.SetActive(false);
         FireButton.SetActive(false);
-
+        GameManager.gameUI.ReloadingSceneUI.SetActive(false);
 
     }
 

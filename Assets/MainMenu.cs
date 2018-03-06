@@ -106,7 +106,7 @@ public class MainMenu : MonoBehaviour
 
 
         FindPanels();
-
+        FindAllLevels();
 
 
     }
@@ -397,6 +397,21 @@ public class MainMenu : MonoBehaviour
         NoGems.SetActive(true);
         W_Language.CheckLang();
 
+    }
+
+
+    public List<W_SceneItem> AllLevels;
+    public void FindAllLevels()
+    {
+
+        AllLevels.Clear();
+
+
+        AllLevels.AddRange(transform.GetComponentsInChildren<W_SceneItem>(true));
+
+        
+
+     
     }
 
     public static void ShowOptions()

@@ -18,6 +18,7 @@ public class Teleport : MonoBehaviour {
     Renderer mainRender;
     public bool OccludeAtStart = true;
     public bool SwithcVisualOnTeleport=false;
+    static bool InUse;
  
 
     void Awake() {
@@ -86,6 +87,7 @@ public class Teleport : MonoBehaviour {
     void TeleportNow()
     {
 
+
         GameManager.m_Character.transform.position = TeleportTo.transform.position;
         if (RespawnIsPossibile) GameManager.LastCheckPoint = TeleportTo.transform.position;
 
@@ -93,6 +95,26 @@ public class Teleport : MonoBehaviour {
         {
             GameManager.cameraMovements.SwitchVisual();
         }
+    }
+
+    IEnumerator Inuso() {
+        InUse = true;
+        //Riattiva tutto
+        GameManager.m_Character.m_Animator.SetFloat("Forward", 0, 0.5f, Time.deltaTime * GameManager.TimeMultipler);
+        float tmpSpeedMultipler = GameManager.m_Character.m_AnimSpeedMultiplier;
+        GameManager.m_Character.m_AnimSpeedMultiplier = 0.05f;
+        GameManager.UserControl.m_Rigidbody.isKinematic = true;
+        //GameManager.UserControl.enabled = false;
+       // GameManager.m_Character.enabled = false;
+
+        yield return new WaitForSeconds(1f);
+        InUse = false;
+        //Riattiva tutto
+        GameManager.UserControl.m_Rigidbody.isKinematic = false;
+       // GameManager.UserControl.enabled = true;
+       // GameManager.m_Character.enabled = true;
+        GameManager.m_Character.m_AnimSpeedMultiplier = tmpSpeedMultipler;
+
     }
 
     void Update()
@@ -103,6 +125,10 @@ public class Teleport : MonoBehaviour {
         if (stay)
             if (CrossPlatformInputManager.GetButton("Inside") || Input.GetKey(KeyCode.W))
             {
+
+                if (InUse) return;
+                StartCoroutine(Inuso());
+
                 if (Active.isEmitting) return; //Per farlo fare una volta sola
 
                 Active.Play();

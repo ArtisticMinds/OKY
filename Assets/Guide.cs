@@ -16,6 +16,7 @@ public class Guide : MonoBehaviour {
     public GameObject Fumetto10;
     public GameObject Fumetto11;
     public GameObject Fumetto12;
+    public GameObject Fumetto13;
 
     public bool Fumetto01Showed;
     public bool Fumetto02Showed;
@@ -29,6 +30,7 @@ public class Guide : MonoBehaviour {
     public bool Fumetto10Showed;
     public bool Fumetto11Showed;
     public bool Fumetto12Showed;
+    public bool Fumetto13Showed;
 
     public static Guide Istance;
 
@@ -64,6 +66,7 @@ public class Guide : MonoBehaviour {
         Fumetto10.SetActive(false);
         Fumetto11.SetActive(false);
         Fumetto12.SetActive(false);
+        Fumetto13.SetActive(false);
     }
 
     public void ShowFumetto01() {
@@ -169,6 +172,22 @@ public class Guide : MonoBehaviour {
         Fumetto12Showed = true;
 
     }
+
+
+    public void ShowFumetto13()
+    {
+        if (GameManager.m_Character.m_JumpPower > 14)
+        {
+            if (!Fumetto13Showed)
+            {
+                Fumetto13.SetActive(true);
+
+                Fumetto13Showed = true;
+            }
+        }
+
+    }
+
     public void HideFumetto01()
     {
         Fumetto01.SetActive(false);
@@ -237,7 +256,12 @@ public class Guide : MonoBehaviour {
     }
     public void HideFumetto12()
     {
-        Fumetto11.SetActive(false);
+        Fumetto12.SetActive(false);
+
+    }
+    public void HideFumetto13()
+    {
+        Fumetto13.SetActive(false);
 
     }
 }
