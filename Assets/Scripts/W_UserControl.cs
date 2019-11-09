@@ -18,6 +18,7 @@ using UnityStandardAssets.CrossPlatformInput;
     bool Shot;
     public float  HorizontalAxis;
     public float VerticalAxis;
+    public bool UseDoubleArrows;
 
     public Rigidbody m_Rigidbody;
 
@@ -50,13 +51,32 @@ using UnityStandardAssets.CrossPlatformInput;
 
 
         // read inputs
-        HorizontalAxis = CrossPlatformInputManager.GetAxis("Horizontal") + Input.GetAxis("Horizontal");
-        VerticalAxis = CrossPlatformInputManager.GetAxis("Vertical") + Input.GetAxis("Vertical"); ;
+        if (!UseDoubleArrows)
+        { 
+        HorizontalAxis = CrossPlatformInputManager.GetAxis("Horizontal") + Input.GetAxis("Horizontal");        
+        VerticalAxis = CrossPlatformInputManager.GetAxis("Vertical") + Input.GetAxis("Vertical");
+        }
         crouch = CrossPlatformInputManager.GetButton("Crouch") || Input.GetKey(KeyCode.C);
         Shot = CrossPlatformInputManager.GetButtonDown("Shot") || Input.GetKeyDown(KeyCode.RightControl);
     }
 
+    public void GoLeft()
+    {
+        if (!UseDoubleArrows) return;
+            HorizontalAxis = -m_Character.m_MoveSpeedMultiplier;
+    }
 
+    public void GoRight()
+    {
+        if (!UseDoubleArrows) return;
+        HorizontalAxis = m_Character.m_MoveSpeedMultiplier; ;
+    }
+
+    public void OnRelease()
+    {
+        if (!UseDoubleArrows) return;
+        HorizontalAxis = 0f;
+    }
 
     private void Update()
         {
@@ -92,5 +112,13 @@ using UnityStandardAssets.CrossPlatformInput;
         yield return new WaitForEndOfFrame(); // wait for nexFrame
         m_Jump = false;
     }
+
+
+
+
+
+
+
+
 }
 

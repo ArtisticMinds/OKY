@@ -7,10 +7,16 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 using GooglePlayGames;
 using UnityEngine.SocialPlatforms;
+using UnityEngine.Advertisements;
+
+
 
 public class GameManager : MonoBehaviour {
 
+
+
     public string AppName = "Oky";
+    public static string gameId = "2698979";
     public static float Diffic = 0.3f;
     public int NewUserGems = 10;
     public GameObject _buildVersion;
@@ -93,7 +99,8 @@ public class GameManager : MonoBehaviour {
     public bool UseAutoQuality;
     GameObject _PlayerStartPoint;
 
-  
+ 
+
 
     void Awake() {
         transform.SetParent(null);
@@ -118,7 +125,7 @@ public class GameManager : MonoBehaviour {
     }
 
         Level = SceneManager.GetActiveScene().buildIndex;
-
+        
         checkInternetConnection = FindObjectOfType<CheckInternetConnection>();
         mainMenu = FindObjectOfType<MainMenu>();
         MasterAudioSource = GetComponent<AudioSource>();
@@ -128,7 +135,7 @@ public class GameManager : MonoBehaviour {
         MasterAudioSource.priority = 256;
         ReadLanguage();
 
-     
+        Advertisement.Initialize(gameId);
 
         //Questo awake viene eseguito solo all'inizio e se non si tratta del livello menu
         //vuol dire che è stato caricato un livello senza menu
@@ -144,6 +151,7 @@ public class GameManager : MonoBehaviour {
 
         GiorniPassati = (int)(Oggi - DataInizio).TotalDays;
         print("GIORNI PASSATI: " + GiorniPassati);
+
 
 
         if (mainMenu)//Se non c'è il mainMenu - per far funzionare le scene anche da sole
@@ -207,6 +215,7 @@ public class GameManager : MonoBehaviour {
 
     void OnSceneWasLoaded(Scene previousScene, LoadSceneMode loadSceneMode)
     {
+       
 
         _PlayerStartPoint = GameObject.Find("_PlayerStartPoint");
 
@@ -259,6 +268,15 @@ public class GameManager : MonoBehaviour {
 
 
     }
+
+
+
+
+
+
+
+
+
     public static void OnLoadMenu()
     {
         if (PlayerPrefs.HasKey(GameManager.Instance.AppName + "_AllLevelsOpen"))
@@ -300,6 +318,7 @@ public class GameManager : MonoBehaviour {
         _EndTimePanel.gameObject.SetActive(false);
         PlayerIsDead = false;
         m_Character.PlayerEnergy = 1;
+        
 
 
         //Timer.PauseTimer = true; //Mette in pausa per i primi tot secondi, poi parte
@@ -793,6 +812,16 @@ public class GameManager : MonoBehaviour {
             MainMenu.BackToMainMenu();
 
         }
+
+
+
+        ////ADsTest
+        //if (Input.GetKeyDown(KeyCode.P))
+        //{
+        //    Advertisement.Show();
+
+        //}
+       
 
         //Menu Button on mobile device
         if (Input.GetKeyDown(KeyCode.Menu))

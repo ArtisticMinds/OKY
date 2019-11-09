@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityStandardAssets.CrossPlatformInput;
-
+using UnityEngine.Advertisements;
 public class W_EndLevel : MonoBehaviour {
 
     public GameObject OpenEffect;
@@ -95,6 +95,29 @@ public class W_EndLevel : MonoBehaviour {
         //Salvo il numero del livello su dataBase
         if (Social.localUser.authenticated && Application.internetReachability != NetworkReachability.NotReachable)
             StartCoroutine(SendLastLevel());
+
+
+        if(GameManager.ThisLevelManager.LevelNumber!="1")
+            if (GameManager.ThisLevelManager.LevelNumber != "2")
+                if (GameManager.ThisLevelManager.LevelNumber != "5")
+                    if (GameManager.ThisLevelManager.LevelNumber != "7")
+                        if (GameManager.ThisLevelManager.LevelNumber != "10")
+                            if (GameManager.ThisLevelManager.LevelNumber != "12")
+                                if (GameManager.ThisLevelManager.LevelNumber != "14")
+                                    if (GameManager.ThisLevelManager.LevelNumber != "16")
+                                        if (GameManager.ThisLevelManager.LevelNumber != "17")
+                                            StartCoroutine(AdvertisementShow());
+    }
+
+
+
+    // Salva l'ultimo livello giocato sul database
+    IEnumerator AdvertisementShow()
+    {
+        yield return new WaitForSeconds(0.5f);
+        Advertisement.Show();
+
+
     }
 
 

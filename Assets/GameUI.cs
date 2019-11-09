@@ -86,6 +86,23 @@ public class GameUI : MonoBehaviour {
     }
 
 
+
+    public void GoLeft()
+    {
+        GameManager.UserControl.GoLeft();
+    }
+
+    public void GoRight()
+    {
+        GameManager.UserControl.GoRight();
+    }
+
+    public void OnRelease()
+    {
+        GameManager.UserControl.OnRelease();
+    }
+
+
     void Update () {
        if(GameManager.m_Character)
         EnergyBarImage.fillAmount = GameManager.m_Character.PlayerEnergy;

@@ -24,7 +24,8 @@
 
 public static class GPGSIds
 {
-        public const string leaderboard_oky = "CgkIsaruzpgREAIQAQ"; // <GPGSID>
+        public const string leaderboard_jurassic_world = "CgkIsaruzpgREAIQAw"; // <GPGSID>
+        public const string leaderboard_paleolithic_world = "CgkIsaruzpgREAIQAg"; // <GPGSID>
 
 }
 

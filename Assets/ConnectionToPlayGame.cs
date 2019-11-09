@@ -4,10 +4,12 @@ using GooglePlayGames.BasicApi;
 using UnityEngine.SocialPlatforms;
 using System.Collections;
 
+
+
 public class ConnectionToPlayGame : MonoBehaviour
 {
     public static ConnectionToPlayGame Instance;
-
+    public static string UserEmail;
      public void Awake()
     {
         if (Instance != null)
@@ -25,9 +27,13 @@ public class ConnectionToPlayGame : MonoBehaviour
         Connect();
     }
 
+    public void Start()
+    {
+
+    }
 
 
-    public  void Connect()
+    public void Connect()
     {
         if (Application.isEditor) return;
         if (Application.internetReachability == NetworkReachability.NotReachable) return;
@@ -60,12 +66,15 @@ public class ConnectionToPlayGame : MonoBehaviour
            
         });
 
-        PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder().Build();
+        PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder()
+            .RequestEmail()
+            .Build();
 
         PlayGamesPlatform.InitializeInstance(config);
 
-
+      
         yield return Social.localUser; // Wait until the download is done
 
+        UserEmail = PlayGamesPlatform.Instance.GetUserEmail();
     }
 }

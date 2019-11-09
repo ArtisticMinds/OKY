@@ -7,6 +7,7 @@
     using System.Collections;
 
 
+
 public class SocialConnection : MonoBehaviour
 {
 
@@ -22,6 +23,8 @@ public class SocialConnection : MonoBehaviour
     public static string UserName;
     public static string UserID;
     public static Texture2D ProfilePic;
+    public string UserEmail;
+    public Text UserEmailText;
     public static string AccessKey = "17071975";
     [Multiline]
     public string returnWWWMessage;
@@ -81,6 +84,12 @@ public class SocialConnection : MonoBehaviour
             if (success)
             {
                 print("Login Success\nNew User:" + Social.localUser.userName);
+                GooglePlayGames.OurUtils.PlayGamesHelperObject.RunOnGameThread(
+                   () => {
+                       Debug.Log("Local user's email is " + ((PlayGamesLocalUser)Social.localUser).Email);
+                       UserEmail = ((PlayGamesLocalUser)Social.localUser).Email;
+
+                   });
             }
             else
             {
@@ -91,7 +100,7 @@ public class SocialConnection : MonoBehaviour
             CheckIfLogged();
         });
 
-
+       
     }
 
     public void CheckIfLogged()
@@ -107,8 +116,13 @@ public class SocialConnection : MonoBehaviour
             UserName = Social.localUser.userName; // UserName
             UserID = Social.localUser.id; // UserID
             ProfilePic = Social.localUser.image; // ProfilePic
+           // UserEmail = ConnectionToPlayGame.UserEmail;
 
-            if(UserNameText)UserNameText.text = UserName;
+
+            //        Debug.Log("Local user's email is " +
+            //((PlayGamesLocalUser)Social.localUser).Email);
+
+            if (UserNameText)UserNameText.text = UserName;
             if (UserNamePicture)
             {
                 UserNamePicture.texture = ProfilePic;
@@ -136,7 +150,7 @@ public class SocialConnection : MonoBehaviour
         }
 
 
-
+       // UserEmailText.text = UserEmail;
     }
 
 

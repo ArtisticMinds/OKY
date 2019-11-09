@@ -40042,7 +40042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Word: 0
-  SceneTime: 150
+  SceneTime: 181
   StarNeeded: 30
   WinGemAtEnd: 0
   HiddenStarsInScene: 0

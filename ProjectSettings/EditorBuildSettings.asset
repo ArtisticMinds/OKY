@@ -95,3 +95,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Livelli/World3/lev_24.unity
     guid: b977c259e02a9b2498fac67310d985c4
+  m_configObjects: {}

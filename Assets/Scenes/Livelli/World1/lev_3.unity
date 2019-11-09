@@ -15182,7 +15182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Word: 0
-  SceneTime: 120
+  SceneTime: 190
   StarNeeded: 20
   WinGemAtEnd: 0
   HiddenStarsInScene: 0
@@ -43381,6 +43381,14 @@ Prefab:
     - target: {fileID: 400002, guid: 02bf3c333107b3145bbf3ae84bf2f3b0, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -179.99998
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: 02bf3c333107b3145bbf3ae84bf2f3b0, type: 2}
+      propertyPath: InitialModule.startRotationX.scalar
+      value: 0.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: 02bf3c333107b3145bbf3ae84bf2f3b0, type: 2}
+      propertyPath: InitialModule.startRotationY.scalar
+      value: 0.0000
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: 02bf3c333107b3145bbf3ae84bf2f3b0, type: 2}
       propertyPath: InitialModule.startRotationX.scalar

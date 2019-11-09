@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.ImageEffects;
-using UnityEngine.UI;
 
 
 //LevelManager
@@ -51,6 +50,7 @@ public class LevelManager : MonoBehaviour {
     public int AddAltitude=1 ;
     public int AddRemovePointsAtEnd = 0;
     public float AddRemoveGravity = 0;
+
 
 
     void Awake()
@@ -182,12 +182,19 @@ public class LevelManager : MonoBehaviour {
         else if (GameManager.Instance.lang == GameManager.Lang.Italian)
             GameUI.Instance.LevelNameOnUI.text = LevelName_ITA.ToString();
 
-
+       
 
         if (ShadowDistanceOverride != 0) QualitySettings.shadowDistance = ShadowDistanceOverride;
 
         GameManager.MiniOptionsMenu.GetComponent<MiniOptionsMenu>().GetSettingData();
         GameManager.MiniOptionsMenu.GetComponent<MiniOptionsMenu>().SettingDataUpdate();
+
+
+
+
+        
+
+
     }
 
 }
