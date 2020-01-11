@@ -98,14 +98,7 @@ public class W_EndLevel : MonoBehaviour {
 
 
         if(GameManager.ThisLevelManager.LevelNumber!="1")
-            if (GameManager.ThisLevelManager.LevelNumber != "2")
-                if (GameManager.ThisLevelManager.LevelNumber != "5")
-                    if (GameManager.ThisLevelManager.LevelNumber != "7")
-                        if (GameManager.ThisLevelManager.LevelNumber != "10")
-                            if (GameManager.ThisLevelManager.LevelNumber != "12")
-                                if (GameManager.ThisLevelManager.LevelNumber != "14")
-                                    if (GameManager.ThisLevelManager.LevelNumber != "16")
-                                        if (GameManager.ThisLevelManager.LevelNumber != "17")
+                if (GameManager.ThisLevelManager.LevelNumber != "4")
                                             StartCoroutine(AdvertisementShow());
     }
 

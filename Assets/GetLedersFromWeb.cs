@@ -41,10 +41,11 @@ public class GetLedersFromWeb : MonoBehaviour {
 
         WWW hs_get = new WWW("http://" + LeaderboadrsURL + "&accesskey=" + SocialConnection.AccessKey + "&UserID=" + SocialConnection.UserID + "&world=" + thisWorld + "&accesskey=" + SocialConnection.AccessKey + "&getdata=WorldLeader" + "&DeviceID=" + SystemInfo.deviceUniqueIdentifier);
         yield return hs_get;
-        if (hs_get.error != null)
+        if (hs_get.error != null || hs_get.text.Contains("Juniper"))
         {
             rootCanvas.alpha = 0;
-            print("There was an error getting the high score: " + hs_get.error);
+            UIText.text = "-----";
+            print("There was an error getting the high score - " + hs_get.error);
         }
         else
         {

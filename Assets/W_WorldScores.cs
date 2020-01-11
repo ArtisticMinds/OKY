@@ -1,9 +1,9 @@
 ﻿
 using UnityEngine;
-using GooglePlayGames;
+//using GooglePlayGames;
 using UnityEngine.SocialPlatforms;
 using UnityEngine.UI;
-using GooglePlayGames.BasicApi;
+//using GooglePlayGames.BasicApi;
 using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
@@ -112,7 +112,7 @@ public class W_WorldScores : MonoBehaviour
         {
 
             string post_url = LeaderboadrsURL + "&accesskey=" + SocialConnection.AccessKey + "&UserID=" + SocialConnection.UserID + "&world=" + thisWorld + "&getdata=getWorldScore" + "&DeviceID=" + SystemInfo.deviceUniqueIdentifier;
-
+            print("LeaderboadrsURL : "+ post_url);
             // Post the URL to the site and create a download object to get the result.
             WWW hs_post = new WWW("http://" + post_url);
             yield return hs_post; // Wait until the download is done
@@ -222,7 +222,7 @@ public class W_WorldScores : MonoBehaviour
 
 
     void PolupateLeaderBoard(string FirstFiveData) {
-        print(FirstFiveData);
+        print("FirstFiveData: "+FirstFiveData);
         for (int i = 0; i <= 4; i++) 
         UsersNamesUITexts[i].text = FirstFiveData.Split('@')[i];
     }

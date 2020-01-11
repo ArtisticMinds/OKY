@@ -1,9 +1,9 @@
 ﻿
 using UnityEngine;
-using GooglePlayGames;
+//using GooglePlayGames;
 using UnityEngine.SocialPlatforms;
 using UnityEngine.UI;
-using GooglePlayGames.BasicApi;
+//using GooglePlayGames.BasicApi;
 using System.Collections.Generic;
 using System.Linq;
 

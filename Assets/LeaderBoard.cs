@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
-using System.Collections;
-using GooglePlayGames;
+//using System.Collections;
+//using GooglePlayGames;
 using UnityEngine.SocialPlatforms;
 
 
@@ -68,7 +68,7 @@ public class LeaderBoard : MonoBehaviour
     /// </summary>
     public void OnLogOut()
     {
-        ((PlayGamesPlatform)Social.Active).SignOut(false);
+        //((PlayGamesPlatform)Social.Active).SignOut(false);
     }
     #endregion
 }

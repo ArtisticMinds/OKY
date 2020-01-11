@@ -1,9 +1,9 @@
 ﻿
     using UnityEngine;
-    using GooglePlayGames;
+   // using GooglePlayGames;
     using UnityEngine.SocialPlatforms;
     using UnityEngine.UI;
-    using GooglePlayGames.BasicApi;
+   // using GooglePlayGames.BasicApi;
     using System.Collections;
 
 
@@ -77,19 +77,19 @@ public class SocialConnection : MonoBehaviour
        
         if (Application.internetReachability == NetworkReachability.NotReachable) return;
 
-        if(ConnectionToPlayGame.Instance)
-        ConnectionToPlayGame.Instance.Connect();
+       // if(ConnectionToPlayGame.Instance)
+       // ConnectionToPlayGame.Instance.Connect();
         Social.localUser.Authenticate((bool success) =>
         {
             if (success)
             {
                 print("Login Success\nNew User:" + Social.localUser.userName);
-                GooglePlayGames.OurUtils.PlayGamesHelperObject.RunOnGameThread(
-                   () => {
-                       Debug.Log("Local user's email is " + ((PlayGamesLocalUser)Social.localUser).Email);
-                       UserEmail = ((PlayGamesLocalUser)Social.localUser).Email;
+                //GooglePlayGames.OurUtils.PlayGamesHelperObject.RunOnGameThread(
+                //   () => {
+                //       Debug.Log("Local user's email is " + ((PlayGamesLocalUser)Social.localUser).Email);
+                //       //UserEmail = ((PlayGamesLocalUser)Social.localUser).Email;
 
-                   });
+                //   });
             }
             else
             {
@@ -162,7 +162,7 @@ public class SocialConnection : MonoBehaviour
     public void OnLogOut()
     {
         print("LOG OUT:" + Social.localUser.userName);
-        PlayGamesPlatform.Instance.SignOut(false);
+        //PlayGamesPlatform.Instance.SignOut(false);
 
     }
 

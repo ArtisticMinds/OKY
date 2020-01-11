@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
-using GooglePlayGames;
-using GooglePlayGames.BasicApi;
+//using GooglePlayGames;
+//using GooglePlayGames.BasicApi;
 using UnityEngine.SocialPlatforms;
 using System.Collections;
 
@@ -44,10 +44,10 @@ public class ConnectionToPlayGame : MonoBehaviour
     IEnumerator Connession() {
  
 
-        // Activate the Google Play Games platform
-        PlayGamesPlatform.Activate();
-        // recommended for debugging:
-        PlayGamesPlatform.DebugLogEnabled = true;
+        //// Activate the Google Play Games platform
+        //PlayGamesPlatform.Activate();
+        //// recommended for debugging:
+        //PlayGamesPlatform.DebugLogEnabled = true;
 
 
         Social.localUser.Authenticate((bool success) => {
@@ -66,15 +66,15 @@ public class ConnectionToPlayGame : MonoBehaviour
            
         });
 
-        PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder()
-            .RequestEmail()
-            .Build();
+        //PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder()
+        //    .RequestEmail()
+        //    .Build();
 
-        PlayGamesPlatform.InitializeInstance(config);
+        //PlayGamesPlatform.InitializeInstance(config);
 
       
         yield return Social.localUser; // Wait until the download is done
 
-        UserEmail = PlayGamesPlatform.Instance.GetUserEmail();
+        //UserEmail = PlayGamesPlatform.Instance.GetUserEmail();
     }
 }
