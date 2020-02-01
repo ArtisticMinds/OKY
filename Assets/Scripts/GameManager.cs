@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
-//using GooglePlayGames;
+using GooglePlayGames;
 using UnityEngine.SocialPlatforms;
 using UnityEngine.Advertisements;
 
@@ -134,7 +134,7 @@ public class GameManager : MonoBehaviour {
         SceneManager.sceneLoaded += OnSceneWasLoaded;
         MasterAudioSource.priority = 256;
         ReadLanguage();
-
+        
         Advertisement.Initialize(gameId);
 
         //Questo awake viene eseguito solo all'inizio e se non si tratta del livello menu
@@ -477,8 +477,12 @@ public class GameManager : MonoBehaviour {
             CameraDistance = PlayerPrefs.GetFloat(GameManager.Instance.AppName + "_CameraDistance");
             GetUIScale.UIAlpha = PlayerPrefs.GetFloat(GameManager.Instance.AppName + "_UITransparence");
             SelectSkin(PlayerPrefs.GetInt(GameManager.Instance.AppName + "_Skin"));
-            UseAutoQuality = Convert.ToBoolean(PlayerPrefs.GetString(GameManager.Instance.AppName + "_autoQuality")) ;
+            if(PlayerPrefs.GetString(GameManager.Instance.AppName + "_autoQuality")=="true")
+            UseAutoQuality = true ;
+            else
+                UseAutoQuality = false;
 
+        /*    
             print("<color=green>Get saved SoundsVol:</color> " + PlayerPrefs.GetFloat(GameManager.Instance.AppName + "_MusicVolume"));
             print("<color=green>Get saved MusicVol:</color> " + PlayerPrefs.GetFloat(GameManager.Instance.AppName + "_SoundsVolume"));
             print("<color=green>Get saved _UIScale:</color> " + PlayerPrefs.GetFloat(GameManager.Instance.AppName + "_UIScale"));
@@ -487,6 +491,8 @@ public class GameManager : MonoBehaviour {
             print("<color=green>Get saved CameraDistance:</color> " + PlayerPrefs.GetFloat(GameManager.Instance.AppName + "_CameraDistance"));
             print("<color=green>Get saved UITransparence:</color> " + PlayerPrefs.GetFloat(GameManager.Instance.AppName + "_UITransparence"));
             print("<color=green>Get saved SelectSkin:</color> " + PlayerPrefs.GetInt(GameManager.Instance.AppName + "_Skin"));
+         */
+            
         }
         else
         {

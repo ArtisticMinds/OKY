@@ -507,11 +507,11 @@ public class MainMenu : MonoBehaviour
         PlayerPrefs.Save();
 
       //  print("<color=magenta>Saving UIScale:</color> " + GameManager.Instance.UIScale_Slider.value);
-        print("<color=magenta>Saving SoundsVol:</color> " + GameManager.Instance.SoundsVol_Slider.value);
-        print("<color=magenta>Saving MusicVol:</color> " + GameManager.Instance.MusicVol_Slider.value);
-        print("<color=magenta>Saving Language:</color> " + GameManager.Instance.lang.ToString());
-        print("<color=magenta>Saving Quality:</color> " + GameManager.Instance.quality.ToString());
-        print("<color=magenta>Saving AutoQuality:</color> " + GameManager.Instance.UseAutoQuality.ToString());
+      //  print("<color=magenta>Saving SoundsVol:</color> " + GameManager.Instance.SoundsVol_Slider.value);
+      //  print("<color=magenta>Saving MusicVol:</color> " + GameManager.Instance.MusicVol_Slider.value);
+      //  print("<color=magenta>Saving Language:</color> " + GameManager.Instance.lang.ToString());
+      //  print("<color=magenta>Saving Quality:</color> " + GameManager.Instance.quality.ToString());
+      //  print("<color=magenta>Saving AutoQuality:</color> " + GameManager.Instance.UseAutoQuality.ToString());
     }
 
 
@@ -535,7 +535,16 @@ public class MainMenu : MonoBehaviour
         GameManager.Instance.UseAutoQuality= autoQuality.isOn;
 
         W_Language.CheckLang();
-
+        if (Social.localUser.authenticated && Social.localUser.userName!="Lerpz")
+        {
+            SocialConnection.UserName = Social.localUser.userName; // UserName
+            SocialConnection.instance.UserNameText.text = SocialConnection.UserName;
+        }
+        else {
+            if (!Social.localUser.authenticated)
+                ConnectionToPlayGame.Instance.Connect();
+        }
+     
         print("UpdateData - " + " Quality"+ GameManager.Instance.quality +" Lang:"+ GameManager.Instance.lang);
     }
 
@@ -572,7 +581,7 @@ public class MainMenu : MonoBehaviour
         UnlockBonusLEvelDialog.SetActive(false);
         AllPanelsColsed = true;
 
-        SocialConnection.instance.CheckIfLogged();
+        Instance.StartCoroutine(SocialConnection.instance.CheckIfLogged());
 
     }
 
@@ -661,9 +670,9 @@ public class MainMenu : MonoBehaviour
         GameManager.Instance.GetSettingData();//Riprendo i dati dal PlayerPref
 
 
-        SocialConnection.instance.CheckIfLogged();
+        Instance.StartCoroutine(SocialConnection.instance.CheckIfLogged());
         if (!Social.localUser.authenticated && Application.internetReachability != NetworkReachability.NotReachable)
-            SocialConnection.instance.LogIn();
+           SocialConnection.instance.LogIn();
 
         Instance.UpdateAllWorldsWebData();
 
@@ -671,6 +680,9 @@ public class MainMenu : MonoBehaviour
         //Imposto _PrimoAvvio su true
         PlayerPrefs.SetInt(GameManager.Instance.AppName + "_PrimoAvvio", 1);
         PlayerPrefs.Save();
+
+        SocialConnection.UserName = Social.localUser.userName; // UserName
+        SocialConnection.instance.UserNameText.text = SocialConnection.UserName;
 
     }
 
@@ -681,7 +693,7 @@ public class MainMenu : MonoBehaviour
         foreach (W_WorldScores W_panel in allWorldScoresPanel)
         {
             W_panel.UpdateAllWebData(true);
-            print(W_panel.name+"  "+W_panel.WorldPoints);
+           // print(W_panel.name+"  "+W_panel.WorldPoints);
         }
 
     }

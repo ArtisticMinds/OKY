@@ -60,8 +60,7 @@ public class OkySkinButton : MonoBehaviour {
     void OpenUnlockSkinPanel() //Immette i dati sul pulsante "YES" parameter è il numero ID delle SKIN, parameter2 è il suo costo
     {
         if (Social.localUser.authenticated && //Autenticato
-                 Application.internetReachability != NetworkReachability.NotReachable && CheckInternetConnection.IsOnline && //Internet connesso
-                !SocialConnection.NoCorrectDeviceID)
+                 Application.internetReachability != NetworkReachability.NotReachable && CheckInternetConnection.IsOnline)
         { 
             MainMenu.BuySkinDialog.SetActive(true);
             MainMenu.BuySkinDialog.GetComponentInChildren<W_Button>().parameter = GetComponent<W_Button>().parameter;

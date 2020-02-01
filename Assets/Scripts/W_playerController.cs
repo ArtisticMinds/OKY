@@ -340,7 +340,7 @@ public class W_playerController : MonoBehaviour
     {
         float quantCaduta = Mathf.Abs((GameManager.m_Character.PlayerYVelocity) * (CadutaMultipler + GameManager.ThisLevelManager.AddCadutaMultipler));
 
-        print(quantCaduta);
+        //print(quantCaduta);
 
 
         if (RexHitInfo.collider) {

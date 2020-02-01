@@ -23,7 +23,8 @@ public class WorldScores : MonoBehaviour {
 
     void OnEnable() {
         if (!_preloader) _preloader= preloader;
-        if (!Social.localUser.authenticated && Application.internetReachability != NetworkReachability.NotReachable ) SocialConnection.instance.LogIn();
+        if (!Social.localUser.authenticated && Application.internetReachability != NetworkReachability.NotReachable )
+            SocialConnection.instance.LogIn();
         ShowPlayerScores();
       
     }

@@ -1,7 +1,8 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Net;
+using System.Text;
 
 public class GetLedersFromWeb : MonoBehaviour {
 
@@ -37,25 +38,42 @@ public class GetLedersFromWeb : MonoBehaviour {
         StartCoroutine(GetWebData());//Prende dati da Web 
     }
 
-        IEnumerator GetWebData() {
 
-        WWW hs_get = new WWW("http://" + LeaderboadrsURL + "&accesskey=" + SocialConnection.AccessKey + "&UserID=" + SocialConnection.UserID + "&world=" + thisWorld + "&accesskey=" + SocialConnection.AccessKey + "&getdata=WorldLeader" + "&DeviceID=" + SystemInfo.deviceUniqueIdentifier);
-        yield return hs_get;
-        if (hs_get.error != null || hs_get.text.Contains("Juniper"))
+    IEnumerator GetWebData() {
+        string url= "http://" + LeaderboadrsURL + "&world=" + thisWorld + "&getdata=WorldLeader" ;
+
+        string hs_get = "";
+        ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
+
+        using (WebClient webClient = new WebClient())
+        {
+            webClient.Encoding = Encoding.UTF8;
+            hs_get = webClient.DownloadString(url);
+
+        }
+
+        yield return hs_get ;
+
+
+       // print("<color=#FFFF00>WorldLeader request URL</color> " + url);
+       // print("<color=#FFFF00>Return Text</color> " + hs_get);
+
+
+        if (hs_get.Contains("Juniper") || hs_get.Contains("Error"))
         {
             rootCanvas.alpha = 0;
             UIText.text = "-----";
-            print("There was an error getting the high score - " + hs_get.error);
+            print("<color=#FF5500>There was an error getting the high score -</color> " + hs_get);
         }
         else
         {
-            PrintOnText(hs_get.text.Trim());
+            PrintOnText(hs_get.Trim());
         }
     }
 
     void PrintOnText(string Leader)
     {
-        print("World"+thisWorld+" Leader = " +Leader.Split('@')[0]);
+      //  print("World"+thisWorld+" Leader = " +Leader.Split('@')[0]);
 
             UIText.text = Leader.Split('@')[0];
     }

@@ -5,6 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityEngine.Advertisements;
+using System.Net;
+using System.Text;
 public class W_EndLevel : MonoBehaviour {
 
     public GameObject OpenEffect;
@@ -120,16 +122,23 @@ public class W_EndLevel : MonoBehaviour {
       
 
 
-            string post_url = "artistic-minds.it/OKY/SetLastLevel.php?" + "&accesskey=" + SocialConnection.AccessKey + "&UserID="+  SocialConnection.UserID + "&LastLevel=" + PlayerPrefs.GetInt(GameManager.Instance.AppName + "_LastLevel") + "&getdata=setLastLevel" ;
-            
-            // Post the URL to the site and create a download object to get the result.
-            WWW hs_post = new WWW("http://" + post_url);
-            yield return hs_post; // Wait until the download is done
+            string post_url = "https//:www.artistic-minds.it/OKY/SetLastLevel.php?" + "&accesskey=" + SocialConnection.AccessKey + "&UserID="+  SocialConnection.UserID + "&LastLevel=" + PlayerPrefs.GetInt(GameManager.Instance.AppName + "_LastLevel") + "&getdata=setLastLevel" ;
+
+        ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
+        string hs_post = "";
+        using (WebClient webClient = new WebClient())
+        {
+            webClient.Encoding = Encoding.UTF8;
+            hs_post = webClient.DownloadString(post_url);
+
+        }
+        yield return hs_post; // Wait until the download is done
 
 
-            if (hs_post.error != null)
+
+        if (hs_post.Contains("Error"))
             {
-                print("There was an error posting the Last Level: " + hs_post.error);
+                print("There was an error posting the Last Level: " + hs_post);
             }
             else
             {

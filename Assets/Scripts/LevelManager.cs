@@ -190,9 +190,10 @@ public class LevelManager : MonoBehaviour {
         GameManager.MiniOptionsMenu.GetComponent<MiniOptionsMenu>().SettingDataUpdate();
 
 
+        W_WorldScores.enableUpdate = true;
 
 
-        
+
 
 
     }

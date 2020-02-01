@@ -1782,7 +1782,7 @@ public class Reporter : MonoBehaviour
 	{
 
 
-        if (Social.localUser.userName != "ArtisticMinds75" && Social.localUser.userName != "WILEz75" && Social.localUser.userName != "JesooCreesto25") return;
+       // if (Social.localUser.userName != "ArtisticMinds75" && Social.localUser.userName != "WILEz75" && Social.localUser.userName != "JesooCreesto25") return;
 
         fpsText = fps.ToString("0.000");
 		gcTotalMemory = (((float)System.GC.GetTotalMemory(false)) / 1024 / 1024);

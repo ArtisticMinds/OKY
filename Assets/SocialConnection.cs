@@ -1,10 +1,12 @@
 ﻿
     using UnityEngine;
-   // using GooglePlayGames;
+    using GooglePlayGames;
     using UnityEngine.SocialPlatforms;
     using UnityEngine.UI;
-   // using GooglePlayGames.BasicApi;
+    using GooglePlayGames.BasicApi;
     using System.Collections;
+using System.Net;
+using System.Text;
 
 
 
@@ -29,7 +31,7 @@ public class SocialConnection : MonoBehaviour
     [Multiline]
     public string returnWWWMessage;
     public GameObject MessageInfo;
-    public static bool NoCorrectDeviceID;
+
     #endregion
 
 
@@ -50,19 +52,19 @@ public class SocialConnection : MonoBehaviour
         MessageInfo = GameObject.Find("_Messages");
       if(MessageInfo)  MessageInfo.SetActive(false);
 
-        print("<color=#FFFFFF>Device ID:" + SystemInfo.deviceUniqueIdentifier + "</color>");
+      //  print("<color=#FFFFFF>Device ID:" + SystemInfo.deviceUniqueIdentifier + "</color>");
     }
 
         void Start()
     {
 
-        print("InternetConnection: " + Application.internetReachability);
+      //  print("InternetConnection: " + Application.internetReachability);
  
 
         if (Application.internetReachability == NetworkReachability.NotReachable ) return;
-        
 
-        CheckIfLogged();
+
+        StartCoroutine(CheckIfLogged());
 
         if (!Social.localUser.authenticated && Application.internetReachability != NetworkReachability.NotReachable)
         LogIn();
@@ -74,22 +76,17 @@ public class SocialConnection : MonoBehaviour
     //Login 
     public void LogIn()
     {
-       
-        if (Application.internetReachability == NetworkReachability.NotReachable) return;
 
-       // if(ConnectionToPlayGame.Instance)
-       // ConnectionToPlayGame.Instance.Connect();
+
+        if(ConnectionToPlayGame.Instance)
+            if (!Social.localUser.authenticated)
+                ConnectionToPlayGame.Instance.Connect();
+
         Social.localUser.Authenticate((bool success) =>
         {
             if (success)
             {
                 print("Login Success\nNew User:" + Social.localUser.userName);
-                //GooglePlayGames.OurUtils.PlayGamesHelperObject.RunOnGameThread(
-                //   () => {
-                //       Debug.Log("Local user's email is " + ((PlayGamesLocalUser)Social.localUser).Email);
-                //       //UserEmail = ((PlayGamesLocalUser)Social.localUser).Email;
-
-                //   });
             }
             else
             {
@@ -97,38 +94,29 @@ public class SocialConnection : MonoBehaviour
                 print("Login failed");
             }
 
-            CheckIfLogged();
+            StartCoroutine(CheckIfLogged());
         });
 
        
     }
 
-    public void CheckIfLogged()
+    public IEnumerator CheckIfLogged()
     {
-        if (UserNamePicture) UserNamePicture.transform.parent.gameObject.SetActive(false);
+        yield return new WaitForSeconds(0.2f);
+
         if (NoLoggedMessage) NoLoggedMessage.SetActive(false);
 
-        if (NoCorrectDeviceID) { print("No correct Device!"); OnLogOut(); return; }
+
        
 
-        if (Social.localUser.authenticated && Application.internetReachability != NetworkReachability.NotReachable)
+        if (Social.localUser.authenticated)
         {
             UserName = Social.localUser.userName; // UserName
             UserID = Social.localUser.id; // UserID
-            ProfilePic = Social.localUser.image; // ProfilePic
-           // UserEmail = ConnectionToPlayGame.UserEmail;
-
-
-            //        Debug.Log("Local user's email is " +
-            //((PlayGamesLocalUser)Social.localUser).Email);
 
             if (UserNameText)UserNameText.text = UserName;
-            if (UserNamePicture)
-            {
-                UserNamePicture.texture = ProfilePic;
-                UserNamePicture.enabled = true;
-            }
-            if (UserNamePicture) UserNamePicture.transform.parent.gameObject.SetActive(true);
+   
+
             if (NoLoggedMessage) NoLoggedMessage.SetActive(false);
 
             if(UserID!="")
@@ -149,15 +137,13 @@ public class SocialConnection : MonoBehaviour
             NoLoggedMessage.SetActive(true);
         }
 
-
-       // UserEmailText.text = UserEmail;
     }
 
 
 
 
     /// <summary>
-    /// On Logout of your Google+ Account
+    /// On Logout of your Google Account
     /// </summary>
     public void OnLogOut()
     {
@@ -179,40 +165,31 @@ public class SocialConnection : MonoBehaviour
     // Se non esiste questo ID nel database, crea un nuovo record sul databse
     IEnumerator NewUser(string name,string ID)
     {
+        print("Check if User Exist...");
         if (Application.internetReachability == NetworkReachability.NotReachable) yield return null;
 
-        string post_url = NewUserURL + "&accesskey=" + WWW.EscapeURL(SocialConnection.AccessKey) + "&nickname=" + WWW.EscapeURL(name) + "&UserID=" + WWW.EscapeURL(ID)+"&DeviceID="+ SystemInfo.deviceUniqueIdentifier;
+        string post_url = "https://www." + NewUserURL + "&nickname=" + name + "&UserID=" + ID;
 
-        // Post the URL to the site and create a download object to get the result.
-        WWW hs_post = new WWW("http://" + post_url);
+        ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
+        string hs_post = "";
+        using (WebClient webClient = new WebClient())
+        {
+            webClient.Encoding = Encoding.UTF8;
+            hs_post = webClient.DownloadString(post_url);
+
+        }
+
         yield return hs_post; // Wait until the download is done
 
-        if (hs_post.error != null)
+        if (hs_post.Contains("Error"))
         {
-            print("There was an error SigUp new User: " + hs_post.error);
+            print("There was an error SigUp new User: " + hs_post);
         }else
         {
            print(("TRY TO NEW USER"));
-           print(("User " + WWW.EscapeURL(name) + "&UserID=" + ID));
-           print(("URL: " + post_url + " Return Text: "+ hs_post.text));
-            NoCorrectDeviceID = false;
-            if (hs_post.text.Contains("Error01"))
-            {
-                returnWWWMessage = hs_post.text.Split('_')[1];
-                if (returnWWWMessage != name)
-                {
-                    ShowMessage(returnWWWMessage);
-                    OnLogOut();
-                    print("Error! NoccorectDevice " + returnWWWMessage);
-                    NoCorrectDeviceID = true;
-                }
-                else {
-
-                    W_GemManager._istance.UpdateData();//Aggiorna la UI senza aggiungere Gemme;
-
-                }
-
-            }
+           print(("User " + name + "&UserID=" + ID));
+           print(("URL: " + post_url + " Return Text: "+ hs_post));
+    
         }
        
     }

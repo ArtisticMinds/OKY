@@ -1,5 +1,5 @@
-lastUpgrade=01006
-proj.pluginVersion=0.10.06
+lastUpgrade=00964
+proj.pluginVersion=0.9.64
 proj.AppId=590723388721
 and.BundleId=com.ArtisticMinds.OKY
 proj.classDir=Assets

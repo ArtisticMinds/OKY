@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
+using System.Net;
+using System.Text;
 
 public class W_GemManager : MonoBehaviour {
 
@@ -143,15 +144,20 @@ public class W_GemManager : MonoBehaviour {
             print("<color=white> Nuovo numeroGems da postare sul Database:" + SetGem + "</color>");
 
             //Spedisco sul database il numero aggiornato
-            string post_url = GemURL + "accesskey=" + SocialConnection.AccessKey + "&nickname=" + Social.localUser.userName + "&UserID=" + SocialConnection.UserID + "&DeviceID=" + SystemInfo.deviceUniqueIdentifier + "&getdata=SetGems" + "&SetGems=" + SetGem;
+            string post_url = "https://www." + GemURL + "accesskey=" + SocialConnection.AccessKey + "&nickname=" + Social.localUser.userName + "&UserID=" + SocialConnection.UserID + "&DeviceID=" + SystemInfo.deviceUniqueIdentifier + "&getdata=SetGems" + "&SetGems=" + SetGem;
 
-            // Post the URL to the site and create a download object to get the result.
-            WWW hs_post = new WWW("http://" + post_url);
-            yield return hs_post; // Wait until the download is done
+            ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
+            string hs_post = "";
+            using (WebClient webClient = new WebClient())
+            {
+                webClient.Encoding = Encoding.UTF8;
+                hs_post = webClient.DownloadString(post_url);
+
+            }
 
             //Aggiorno la variabile PlayerGems
             PlayerGems = SetGem;
-
+            if (PlayerGems < 0) PlayerGems = 0;
             print("<color=white> NumeroGems aggiornate:" + PlayerGems + "</color>");
 
 
@@ -162,9 +168,9 @@ public class W_GemManager : MonoBehaviour {
             }
 
 
-            if (hs_post.error != null)
+            if (hs_post.Contains("Error"))
             {
-                print("There was an error posting the high score: " + hs_post.error);
+                print("There was an error posting the high score: " + hs_post);
             }
             else
             {
@@ -194,10 +200,15 @@ public class W_GemManager : MonoBehaviour {
             print("<color=white> Nuovo numeroGems da postare sul Database:" + SetGem);
 
             //Spedisco sul database il numero aggiornato
-            string post_url = GemURL + "accesskey=" + SocialConnection.AccessKey + "&nickname=" + Social.localUser.userName+ "&UserID=" + SocialConnection.UserID + "&DeviceID=" + SystemInfo.deviceUniqueIdentifier + "&getdata=SetGems" + "&SetGems=" + SetGem;
+            string post_url = "https://www." + GemURL + "accesskey=" + SocialConnection.AccessKey + "&nickname=" + Social.localUser.userName+ "&UserID=" + SocialConnection.UserID + "&DeviceID=" + SystemInfo.deviceUniqueIdentifier + "&getdata=SetGems" + "&SetGems=" + SetGem;
+            ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
+            string hs_post = "";
+            using (WebClient webClient = new WebClient())
+            {
+                webClient.Encoding = Encoding.UTF8;
+                hs_post = webClient.DownloadString(post_url);
 
-            // Post the URL to the site and create a download object to get the result.
-            WWW hs_post = new WWW("http://" + post_url);
+            }
             yield return hs_post; // Wait until the download is done
 
             //Aggiorno la variabile PlayerGems
@@ -213,9 +224,9 @@ public class W_GemManager : MonoBehaviour {
             }
             
 
-            if (hs_post.error != null)
+            if (hs_post.Contains("Error"))
             {
-                print("There was an error posting the high score: " + hs_post.error);
+                print("There was an error posting the high score: " + hs_post);
             }
             else
             {
@@ -237,12 +248,17 @@ public class W_GemManager : MonoBehaviour {
         {
 
             //Qui getFromWWW
-            string post_url = GemURL + "accesskey=" + SocialConnection.AccessKey + "&nickname=" + Social.localUser.userName + "&UserID=" + SocialConnection.UserID + "&DeviceID=" + SystemInfo.deviceUniqueIdentifier + "&getdata=getGems";
+            string post_url = "https://www."  + GemURL + "accesskey=" + SocialConnection.AccessKey + "&nickname=" + Social.localUser.userName + "&UserID=" + SocialConnection.UserID + "&DeviceID=" + SystemInfo.deviceUniqueIdentifier + "&getdata=getGems";
 
-            // Post the URL to the site and create a download object to get the result.
-            WWW hs_post = new WWW("http://" + post_url);
+            string hs_post = "";
+            using (WebClient webClient = new WebClient())
+            {
+                webClient.Encoding = Encoding.UTF8;
+                hs_post = webClient.DownloadString(post_url);
+
+            }
             yield return hs_post; // Wait until the download is done
-            string PlayerGemsFromWWW = hs_post.text;
+            string PlayerGemsFromWWW = hs_post;
 
             bool ConvertOK=int.TryParse(PlayerGemsFromWWW,out PlayerGems); //Segna il valore da Web su PlayerGems
             print(ConvertOK + "PlayerGems:"+ PlayerGemsFromWWW);
@@ -299,9 +315,9 @@ public class W_GemManager : MonoBehaviour {
    public void GemStatusUpdate()
     {
         if (Social.localUser.authenticated && //Autenticato
-            Application.internetReachability != NetworkReachability.NotReachable && CheckInternetConnection.IsOnline && //Internet connesso
-        !SocialConnection.NoCorrectDeviceID) //Device corretto
+            Application.internetReachability != NetworkReachability.NotReachable && CheckInternetConnection.IsOnline)
         {
+            if (PlayerGems < 0) PlayerGems = 0;
             if (_InGameGemText) _InGameGemText.text = PlayerGems.ToString(); //Aggiorna il testo a schermo
             if (_InMenuGemText) _InMenuGemText.text = PlayerGems.ToString(); //Aggiorna il testo a schermo
             if (_OffLineGems) _OffLineGems.SetActive(false);
