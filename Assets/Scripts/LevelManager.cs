@@ -159,7 +159,7 @@ public class LevelManager : MonoBehaviour {
             // RenderSettings.fog = false;
         }
         //Cose da azzerare allo start di ogni livello
-        GameManager.PlayerIsDead = GameManager.LevelComplete = GameManager.Lose = false;
+        GameManager.PlayerIsDead = GameManager.LevelComplete = GameManager.Lose = GameManager.forcedDead = false;
         GameManager.Instance.SetGameState(GameManager.Game_State.Running);
         MusicManager.StopFade();
 

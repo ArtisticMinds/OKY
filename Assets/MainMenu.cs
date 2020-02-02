@@ -515,9 +515,18 @@ public class MainMenu : MonoBehaviour
     }
 
 
+    public static IEnumerator UpdateDataDelayed() {
+
+        yield return new WaitForSeconds(0.3f);
+        UpdateData();
+    }
+
+
+
 
     public static void UpdateData()
     {
+        if (!LangDropDown) return;
 
         if (LangDropDown.value.Equals(0))
             GameManager.Instance.lang = GameManager.Lang.English;
@@ -542,9 +551,11 @@ public class MainMenu : MonoBehaviour
         }
         else {
             if (!Social.localUser.authenticated)
+                if(ConnectionToPlayGame.Instance)
                 ConnectionToPlayGame.Instance.Connect();
         }
-     
+        if (SocialConnection.instance.UserNameText.text == "Uninitialized") SocialConnection.instance.UserNameText.text = "";
+
         print("UpdateData - " + " Quality"+ GameManager.Instance.quality +" Lang:"+ GameManager.Instance.lang);
     }
 

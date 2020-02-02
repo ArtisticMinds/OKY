@@ -39,7 +39,7 @@ using UnityEngine.UI;
             myTimer = 0;
         }
 
-        if (Social.localUser.userName != "ArtisticMinds75"&& Social.localUser.userName != "Lerpz") m_Text.text = "";
+        if (Social.localUser.userName != "ArtisticMinds75" && Social.localUser.userName != "Lerpz") m_Text.text = "";
     }
 
 

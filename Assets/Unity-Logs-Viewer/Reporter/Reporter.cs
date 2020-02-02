@@ -287,7 +287,9 @@ public class Reporter : MonoBehaviour
 
 	void Awake()
 	{
-		if (!Initialized)
+       
+
+        if (!Initialized)
 			Initialize();
 	}
 

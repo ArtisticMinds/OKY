@@ -9,7 +9,7 @@ using System.Collections;
 public class ConnectionToPlayGame : MonoBehaviour
 { 
     public static ConnectionToPlayGame Instance;
-
+    public static GameObject ReporterGameObject;
     private void Awake()
     {
 
@@ -20,6 +20,7 @@ public class ConnectionToPlayGame : MonoBehaviour
         }
         else Destroy(gameObject);
 
+        ReporterGameObject= FindObjectOfType<Reporter>().gameObject;
 
     }
 
@@ -36,10 +37,14 @@ public class ConnectionToPlayGame : MonoBehaviour
     public void Connect()
     {
 
-        if (!Social.localUser.authenticated) { 
-       if(!Application.isEditor) ActivateGPG(); //Per connettersi con Lerp
+        if (!Social.localUser.authenticated)
+        { 
+
+     //  if(!Application.isEditor)
+         ActivateGPG(); //Per connettersi con Lerpz (togliere per testare)
+
         StartCoroutine(LogIn());
-    }
+        }
 
     }
 
@@ -74,7 +79,7 @@ public class ConnectionToPlayGame : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.2f);
 
         Social.localUser.Authenticate((bool success) =>
         {
@@ -90,6 +95,11 @@ public class ConnectionToPlayGame : MonoBehaviour
 
             }
 
+            if (Social.localUser.userName != "ArtisticMinds75" && Social.localUser.userName != "Lerpz" && Social.localUser.userName != "WILEz75")
+            {
+                if(ReporterGameObject)
+                    Destroy(ReporterGameObject);             
+            }
 
         });
 

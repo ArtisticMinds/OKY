@@ -429,7 +429,7 @@ public class GameManager : MonoBehaviour {
                 }
 
 
-                MainMenu.UpdateData();
+              StartCoroutine(MainMenu.UpdateDataDelayed());
 
 
 
@@ -731,6 +731,23 @@ public class GameManager : MonoBehaviour {
 
     }
 
+    public static bool forcedDead;
+    public static void ForceDead()
+    {
+        if (forcedDead) return;
+        GameManager.m_Character.ResetOriginalMaterials();
+        MusicManager.MusicFadeOut();
+        m_Character.PlayerEnergy = 0;
+        _DeadPanel.gameObject.SetActive(true);
+        PlayerIsDead = true;
+        print("Player IS DEAD (forced)");
+        GameManager.MasterAudioSource.PlayOneShot(m_Character.DeadSound);
+        GameManager.m_Character.CheckResumePossibility();
+        forcedDead = true;
+        PlayerIsDead = true;
+    }
+
+
     public static void PlayerDead()
     {
         if (PlayerIsDead) return;
@@ -768,7 +785,7 @@ public class GameManager : MonoBehaviour {
         if (!m_Character.CheckResumePossibility()) return;
         GameManager.m_Character.ResetOriginalMaterials();
 
-        PlayerIsDead = Lose = false; //Resucita
+        PlayerIsDead = Lose = forcedDead= false; //Resucita
         Respawn = true;
         _EndTimePanel.gameObject.SetActive(false);//Rimuove la UI di morte
         _DeadPanel.gameObject.SetActive(false);//Rimuove la UI di morte

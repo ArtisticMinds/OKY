@@ -919,6 +919,7 @@ public class W_playerController : MonoBehaviour
                     SplashEffect.gameObject.SetActive(true);//Attivo l'effetto Splash in acqua
                     GameManager.cameraMovements.target = SplashEffect.transform;//Stacco il follow della telecamera dal player e lo metto sull'effetto Splash
                     W_PlayerPoints._istance.RemovePoints(200);
+                    GameManager.ForceDead();
                 }
                 else if (deadTrigger.IsLava)
                 {
@@ -928,6 +929,7 @@ public class W_playerController : MonoBehaviour
                     SplashInLavaEffect.gameObject.SetActive(true);//Attivo l'effetto Splash in acqua
                     GameManager.cameraMovements.target = SplashInLavaEffect.transform;//Stacco il follow della telecamera dal player e lo metto sull'effetto Splash
                     W_PlayerPoints._istance.RemovePoints(200);
+                    GameManager.ForceDead();
                 }
 
 

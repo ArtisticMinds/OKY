@@ -122,6 +122,8 @@ public class SocialConnection : MonoBehaviour
             if(UserID!="")
             StartCoroutine(NewUser(UserName, UserID));//Controlla se è un nuovo utente e nel caso, lo aggiunge al Database
 
+
+
         }
         else
         {
@@ -248,6 +250,10 @@ public class SocialConnection : MonoBehaviour
         "corretto.\n";
     }
 
-
+    private void Update()
+    {
+        if (UserNameText) UserNameText.text = Social.localUser.userName;
+        if (UserNameText.text == "Uninitialized") UserNameText.text = "";
+    }
 
 }
