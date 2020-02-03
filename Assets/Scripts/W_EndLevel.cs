@@ -44,7 +44,7 @@ public class W_EndLevel : MonoBehaviour {
         {
 
             BlinkUseButton.Active();
-            if (CrossPlatformInputManager.GetButton("Inside") || Input.GetKey(KeyCode.W))
+            if (CrossPlatformInputManager.GetButton("Inside") || Input.GetKey(KeyCode.W)) //Provando ad entrare nel portale
             {
 
                 //Se il livello risulta già completato 
@@ -54,7 +54,7 @@ public class W_EndLevel : MonoBehaviour {
 
             //Se sono state raccolte tutte le stelle necessarie
             if (W_PlayerPoints.StarsComplete)
-                LivelloCompletato();
+               StartCoroutine(LivelloCompletato());
             else
                 MoreStarsNeededMessage();
             }
@@ -77,36 +77,48 @@ public class W_EndLevel : MonoBehaviour {
         GameUI.Instance.ShowUseButton();
     }
 
-   public void LivelloCompletato()
+   public IEnumerator LivelloCompletato()
     {
         //Segnala che il livello è completato
         GameManager.LevelComplete = true;
 
         //Attiva il messaggio a schermo
-        GameUI.Instance.LevelCompleteMessageUI.gameObject.SetActive(true);
-        GameUI.Instance.LevelCompleteMessageUI.GetComponent<CanvasGroup>().interactable = true; //Attiva i pulsanti
+        GameUI.Instance.LevelCompleteMessageUI.gameObject.SetActive(true); //Attiva il gameObject dei pulsanti
+        GameUI.Instance.LevelCompleteMessageUI.GetComponent<CanvasGroup>().interactable = false; //Visualizza i pulsanti inattivi
         GameUI.Instance.LevelCompleteMessageUI.transform.GetComponent<CanvasGroup>().alpha = 1;//Visualizza la grafica del livello completato
         GameUI.Instance.LevelCompleteMessageUI.GetComponentInChildren<Animator>().enabled = true;
-        GameUI.Instance.LevelCompleteMessageUI.GetComponent<CanvasGroup>().blocksRaycasts = true;
-        GameUI.Instance.LevelCompleteMessageUI.GetComponent<CanvasGroup>().interactable = true;
+        GameUI.Instance.LevelCompleteMessageUI.GetComponent<CanvasGroup>().blocksRaycasts = false;
+        GameUI.Instance.LevelCompleteMessageUI.GetComponent<CanvasGroup>().interactable = false;
         GameManager.MasterAudioSource.PlayOneShot(LevelCompleteSound);
+
+
+        yield return new WaitForSeconds(0.5f);
+
+
+
 
         //Calcola i punti fatti in questo livello aggiungendo anche il tempo rimasto 
         W_PlayerPoints._istance.LevelComplete();
 
-        //Salvo il numero del livello su dataBase
-        if (Social.localUser.authenticated && Application.internetReachability != NetworkReachability.NotReachable)
-            StartCoroutine(SendLastLevel());
+        GameUI.Instance.LevelCompleteMessageUI.GetComponent<CanvasGroup>().interactable = true; //Attiva i pulsanti
+        GameUI.Instance.LevelCompleteMessageUI.transform.GetComponent<CanvasGroup>().alpha = 1;//Visualizza la grafica del livello completato
+        GameUI.Instance.LevelCompleteMessageUI.GetComponent<CanvasGroup>().blocksRaycasts = true;
+        GameUI.Instance.LevelCompleteMessageUI.GetComponent<CanvasGroup>().interactable = true;
 
 
-        if(GameManager.ThisLevelManager.LevelNumber!="1")
-                if (GameManager.ThisLevelManager.LevelNumber != "4")
+        if (GameManager.ThisLevelManager.LevelNumber!="1") //Niente pubblicità dopo il primo livello
                                             StartCoroutine(AdvertisementShow());
+
+       
+
+        //Salvo il numero del livello su dataBase
+       // if (Social.localUser.authenticated && Application.internetReachability != NetworkReachability.NotReachable)
+       //     StartCoroutine(SendLastLevel());
     }
 
 
 
-    // Salva l'ultimo livello giocato sul database
+    // Mostra pubblicità
     IEnumerator AdvertisementShow()
     {
         yield return new WaitForSeconds(0.5f);
@@ -122,7 +134,7 @@ public class W_EndLevel : MonoBehaviour {
       
 
 
-            string post_url = "https//:www.artistic-minds.it/OKY/SetLastLevel.php?" + "&accesskey=" + SocialConnection.AccessKey + "&UserID="+  SocialConnection.UserID + "&LastLevel=" + PlayerPrefs.GetInt(GameManager.Instance.AppName + "_LastLevel") + "&getdata=setLastLevel" ;
+        string post_url = "https//:www.artistic-minds.it/OKY/SetLastLevel.php?" + "&accesskey=" + SocialConnection.AccessKey + "&UserID="+  SocialConnection.UserID + "&LastLevel=" + PlayerPrefs.GetInt(GameManager.Instance.AppName + "_LastLevel") + "&getdata=setLastLevel" ;
 
         ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
         string hs_post = "";

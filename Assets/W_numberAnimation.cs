@@ -19,7 +19,7 @@ public class W_numberAnimation : MonoBehaviour {
     void Start () {
 
         UItext = GetComponent<Text>();
-       
+        UItext.text = "";
 
     }
 

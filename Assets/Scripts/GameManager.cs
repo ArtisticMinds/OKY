@@ -589,6 +589,7 @@ public class GameManager : MonoBehaviour {
 
     public static void ReloadScene()
     {
+        Instance.StartCoroutine(Instance.AdvertisementShow());
         Resources.UnloadUnusedAssets();
         System.GC.Collect();
         gameUI.ReloadingSceneUI.SetActive(true);
@@ -735,6 +736,9 @@ public class GameManager : MonoBehaviour {
     public static void ForceDead()
     {
         if (forcedDead) return;
+
+       
+
         GameManager.m_Character.ResetOriginalMaterials();
         MusicManager.MusicFadeOut();
         m_Character.PlayerEnergy = 0;
@@ -779,8 +783,16 @@ public class GameManager : MonoBehaviour {
     }
 
 
+    // Mostra pubblicità
+    IEnumerator AdvertisementShow()
+    {
+        yield return new WaitForSeconds(0.5f);
+        Advertisement.Show();
+    }
 
     public void ReSpawnOky() {
+
+
 
         if (!m_Character.CheckResumePossibility()) return;
         GameManager.m_Character.ResetOriginalMaterials();
